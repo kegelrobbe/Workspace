@@ -1,0 +1,71 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First>
+  <PageSize name="Letter"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="56692.0mpt" anchorSide="same"></Left>
+   <Top distance="248028.0mpt" anchorSide="same"></Top>
+   <Right distance="56693.0mpt" anchorSide="same"></Right>
+   <Bottom distance="56694.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Header">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="0.0mpt" anchorSide="same"></Right>
+   <Bottom distance="706961.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Footer">
+   <Left distance="56691.0mpt" anchorSide="same"></Left>
+   <Top distance="735308.0mpt" anchorSide="same"></Top>
+   <Right distance="56692.0mpt" anchorSide="same"></Right>
+   <Bottom distance="0.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Markings">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="85039.0mpt" anchorSide="same"></Top>
+   <Right distance="555308.0mpt" anchorSide="same"></Right>
+   <Bottom distance="0.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="SenderAddress">
+   <Left distance="215151.0mpt" anchorSide="same"></Left>
+   <Top distance="85038.0mpt" anchorSide="same"></Top>
+   <Right distance="56692.0mpt" anchorSide="same"></Right>
+   <Bottom distance="636096.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="LetterDateLine">
+   <Left distance="215151.0mpt" anchorSide="same"></Left>
+   <Top distance="155904.0mpt" anchorSide="same"></Top>
+   <Right distance="56692.0mpt" anchorSide="same"></Right>
+   <Bottom distance="614837.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="RecipientAddress">
+   <Left distance="56692.0mpt" anchorSide="same"></Left>
+   <Top distance="177162.0mpt" anchorSide="same"></Top>
+   <Right distance="215151.0mpt" anchorSide="same"></Right>
+   <Bottom distance="543972.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </First>
+ <DefaultPageLayout>
+  <PageSize name="Letter"></PageSize>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="2.0cm" anchorSide="same"></Left>
+   <Top distance="85038.0mpt" anchorSide="same"></Top>
+   <Right distance="2.0cm" anchorSide="same"></Right>
+   <Bottom distance="2.0cm" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Header">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="0.0mpt" anchorSide="same"></Right>
+   <Bottom distance="706961.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Footer">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="735307.0mpt" anchorSide="same"></Top>
+   <Right distance="0.0mpt" anchorSide="same"></Right>
+   <Bottom distance="1.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </DefaultPageLayout>
+</PageLayouts>

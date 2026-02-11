@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="162.85835mm"
+   height="70.152832mm"
+   viewBox="0 0 162.85835 70.152832"
+   version="1.1"
+   id="svg26832"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="kwsoft Welle Oben.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview26834"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.77593294"
+     inkscape:cx="621.83209"
+     inkscape:cy="372.45487"
+     inkscape:window-width="1842"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs26829">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient24744"
+       id="linearGradient24746"
+       x1="14.533954"
+       y1="51.658726"
+       x2="176.80399"
+       y2="89.228996"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-73.419531,43.032422)" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient24744">
+      <stop
+         style="stop-color:#e30018;stop-opacity:1"
+         offset="0"
+         id="stop24740" />
+      <stop
+         style="stop-color:#f7542a;stop-opacity:1"
+         offset="0.50502276"
+         id="stop24910" />
+      <stop
+         style="stop-color:#ffc779;stop-opacity:1"
+         offset="1"
+         id="stop24742" />
+    </linearGradient>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(59.605985,-50.170446)">
+    <path
+       style="fill:url(#linearGradient24746);fill-opacity:1;stroke:none;stroke-width:0.221541;stroke-miterlimit:1"
+       d="M -59.605985,112.64652 V 50.170446 H 103.00736 l 0.24501,57.537514 v 0 c 0,0 -3.23064,-0.94761 -4.877041,-1.28964 -1.1476,-0.23842 -2.30832,-0.43028 -3.47622,-0.5295 -0.83358,-0.0708 -1.67371,-0.0861 -2.50933,-0.046 -1.41189,0.0678 -2.81002,0.31046 -4.21291,0.48345 -3.90248,0.48123 -11.69485,1.54243 -11.69485,1.54243 l -80.137247,10.61287 c -3.28438,0.41438 -6.568759,0.82877 -9.853139,1.24315 -2.793257,0.26858 -2.633162,0.39904 -8.448835,0.59856 -3.115557,-0.0921 -6.231114,-0.6446 -9.346671,-1.24316 l -28.302112,-6.43356"
+       id="rect17306" />
+  </g>
+</svg>

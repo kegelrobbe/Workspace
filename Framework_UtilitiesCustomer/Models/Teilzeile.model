@@ -1,0 +1,39 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Teilzeile" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsteilzeile.datamodel">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Rechnungszeile" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungszeile.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>	Teilzeile: </Text>
+    <Data>$Teilzeile.rtz_ap_preisart_bezeichnung</Data>
+    <Text>: </Text>
+    <Data>$Teilzeile.rtz_verbrauch</Data>
+    <Text> </Text>
+    <Data>$Rechnungszeile.rz_mengeneinheit</Data>
+    <Text>* </Text>
+    <Data>$Teilzeile.rtz_ap</Data>
+    <Data>$Rechnungsdaten.stamm_erstellungswaehrung</Data>
+    <Text> = </Text>
+    <Data>$Teilzeile.rtz_netto</Data>
+    <Data>$Rechnungsdaten.stamm_erstellungswaehrung</Data>
+    <Text> zzgl. </Text>
+    <Data>$Rechnungszeile.rz_steuer_prozent</Data>
+    <Text>% (</Text>
+    <Data>$Teilzeile.rtz_steuer</Data>
+    <Data>$Rechnungsdaten.stamm_erstellungswaehrung</Data>
+    <Text>) –&gt; </Text>
+    <Data>$Teilzeile.rtz_brutto</Data>
+    <Data>$Rechnungsdaten.stamm_erstellungswaehrung</Data>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

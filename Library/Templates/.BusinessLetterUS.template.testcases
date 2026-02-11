@@ -1,0 +1,218 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="Sample Letter Data">
+ <TestCase name="Sample Letter Data" includeInRegressionTool="true">
+  <Root base="DIN5008">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Letter">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="Recipient">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Address">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="Line1" valueChanged="fromDataSource">
+         <Value><![CDATA[string:Hans Brackhaus]]></Value>
+        </DataNode>
+        <DataNode name="Line2" valueChanged="fromDataSource">
+         <Value><![CDATA[string:Krupp Allee 17]]></Value>
+        </DataNode>
+        <DataNode name="Line3" valueChanged="fromDataSource">
+         <Value><![CDATA[string:45143 Essen]]></Value>
+        </DataNode>
+        <DataNode name="Line4" valueChanged="fromDataSource">
+         <Value><![CDATA[string:DEUTSCHLAND]]></Value>
+        </DataNode>
+        <DataNode name="SingleLine" valueChanged="fromDataSource">
+         <Value><![CDATA[string:Hans Brackhaus • Krupp Allee 17 • 45143 Essen]]></Value>
+        </DataNode>
+        <DataNode name="Lines">
+         <DataNode name="Line">
+          <Value><![CDATA[string:Hans Brackhaus]]></Value>
+         </DataNode>
+         <DataNode name="Line">
+          <Value><![CDATA[string:Krupp Allee 17]]></Value>
+         </DataNode>
+         <DataNode name="Line">
+          <Value><![CDATA[string:45143 Essen]]></Value>
+         </DataNode>
+         <DataNode name="Line">
+          <Value><![CDATA[string:DEUTSCHLAND]]></Value>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Sender">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Address">
+        <Value><![CDATA[string:]]></Value>
+        <DataNode name="Line1" valueChanged="fromDataSource">
+         <Value><![CDATA[string:Maria Mercurial]]></Value>
+        </DataNode>
+        <DataNode name="Line2" valueChanged="fromDataSource">
+         <Value><![CDATA[string:Taylorweg 42]]></Value>
+        </DataNode>
+        <DataNode name="Line3" valueChanged="fromDataSource">
+         <Value><![CDATA[string:5466 AE Veghel]]></Value>
+        </DataNode>
+        <DataNode name="Line4" valueChanged="fromDataSource">
+         <Value><![CDATA[string:NEDERLAND]]></Value>
+        </DataNode>
+        <DataNode name="SingleLine" valueChanged="fromDataSource">
+         <Value><![CDATA[string:Maria Mercurial • Taylorweg 42 • 5466 AE Veghel]]></Value>
+        </DataNode>
+        <DataNode name="Lines">
+         <DataNode name="Line">
+          <Value><![CDATA[string:Maria Mercurial]]></Value>
+         </DataNode>
+         <DataNode name="Line">
+          <Value><![CDATA[string:Taylorweg 42]]></Value>
+         </DataNode>
+         <DataNode name="Line">
+          <Value><![CDATA[string:5466 AE Veghel]]></Value>
+         </DataNode>
+         <DataNode name="Line">
+          <Value><![CDATA[string:NEDERLAND]]></Value>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+       <DataNode name="Faksimile" valueChanged="fromDataSource">
+        <Value><![CDATA[string:faksimile_mmerc.png]]></Value>
+       </DataNode>
+       <DataNode name="FaksimileLabel" valueChanged="fromDataSource">
+        <Value><![CDATA[string:Maria Mercurial]]></Value>
+       </DataNode>
+       <DataNode name="FaksimileFilename">
+        <Value><![CDATA[string:mtx:Ressources/faksimile_mmerc.png]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="SalutatoryAddress" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Geachte heer Brackhaus]]></Value>
+       <DataNode name="GraphicFilename">
+        <Value><![CDATA[string:mtx:Ressources/]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="ComplimentaryClose" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Hartelijke groeten]]></Value>
+       <DataNode name="GraphicFilename">
+        <Value><![CDATA[string:mtx:Ressources/]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Subject">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:meeting minutes]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Date" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Utrecht, 24.05.2025]]></Value>
+      </DataNode>
+      <DataNode name="ContactDetails">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:Maria Mercurial]]></Value>
+       </DataNode>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:maria@mercurial.sk]]></Value>
+       </DataNode>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:+421 815 4711]]></Value>
+       </DataNode>
+       <DataNode name="Line" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Header">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="GraphicName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:logo.png]]></Value>
+       </DataNode>
+       <DataNode name="GraphicFilename">
+        <Value><![CDATA[string:mtx:Ressources/logo.png]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="Footer">
+       <DataNode name="GraphicFilename">
+        <Value><![CDATA[string:mtx:Ressources/]]></Value>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="TestMode" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="OutputMode" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="DocumentLanguage">
+       <Value><![CDATA[string:USA]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\Library\Templates\BusinessLetterUS.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <ContainerPartInstance partIndex="0">
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="1">
+     <Data>
+      <DataNodeRef handle=":0/7" name="Header"></DataNodeRef>
+     </Data>
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="2">
+     <Data>
+      <DataNodeRef handle=":0/1/0/4" name="Line"></DataNodeRef>
+     </Data>
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="3">
+     <Data>
+      <DataNodeRef handle=":0/5" name="Date"></DataNodeRef>
+      <DataNodeRef handle=":0/6" name="ContactDetails"></DataNodeRef>
+     </Data>
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="4">
+     <Data>
+      <DataNodeRef handle=":0/0/0" name="Address"></DataNodeRef>
+     </Data>
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="5">
+     <Data>
+      <DataNodeRef handle=":0" name="MESSAGE"></DataNodeRef>
+     </Data>
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+    <ContainerPartInstance partIndex="6">
+     <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+    </ContainerPartInstance>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\Framework\Testdata\SampleLetterData.xml" name="DATA.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

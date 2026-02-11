@@ -1,0 +1,44 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="anschriften" ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel"></ParamDef>
+  <ParamDef name="block_verbrauchsstelle" ref="\\Framework_UtilitiesCustomer\Data\block_verbrauchsstelle.datamodel"></ParamDef>
+ </DataDefinition>
+ <Container>
+  <Style>
+   <SpaceAfter resolution="combine">0.3cm</SpaceAfter>
+  </Style>
+  <Par>
+   <Span>
+    <Style>
+     <FontSize>11.0pt</FontSize>
+    </Style>
+    <Text>Verbrauchsstelle: </Text>
+   </Span>
+   <Span>
+    <Data>$anschriften.an_name1</Data>
+    <Text>, </Text>
+    <Data>$anschriften.an_name2</Data>
+    <Data>$anschriften.an_name3</Data>
+   </Span>
+   <Span>
+    <Data>$anschriften.an_adresse</Data>
+    <Text>, </Text>
+    <Data>$anschriften.an_zusatzhausnummer</Data>
+    <Data>$anschriften.an_wohnungsnummer</Data>
+   </Span>
+   <Span>
+    <Data>$anschriften.an_lkz</Data>
+    <Text> </Text>
+    <Data>$anschriften.an_plz</Data>
+    <Text> </Text>
+    <Data>$anschriften.an_ort</Data>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>Zählpunkt: </Text>
+    <Data>$block_verbrauchsstelle.zaehlpunkt.zpkt_bezeichnung</Data>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

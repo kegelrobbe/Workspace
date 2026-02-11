@@ -1,0 +1,50 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="SubjectCode">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <DataNodeDef name="SubjectText">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Script><![CDATA[/**
+* AAI: General Information
+* SUR: Supplier Notes
+* REG: Regulatory information
+* ABL: Legal Information
+* TXD: Tax Information
+* CUS: Customs Information
+**/
+var subjectCode = $SubjectCode.valueOf();
+var subjectText = "SubjectCode: " + subjectCode;
+switch (subjectCode)
+{
+	case "AAI" : subjectText = "General Information"; break;
+	case "SUR" : subjectText = "Supplier Notes"; break;
+	case "REG" : subjectText = "Regulatory information"; break;
+	case "ABL" : subjectText = "Legal Information"; break;
+	case "TXD" : subjectText = "Tax Information"; break;
+	case "CUS" : subjectText = "Customs Information"; break;
+	case "ACB" : subjectText = "Additional information";break;
+}
+subjectText;]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+ </DataDefinition>
+ <Par>
+  <Style parentName="Generic 10pt"></Style>
+  <Span>
+   <Data>$SubjectText</Data>
+   <Text></Text>
+  </Span>
+ </Par>
+</ContainerPart>

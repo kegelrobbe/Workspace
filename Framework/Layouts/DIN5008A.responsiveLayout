@@ -1,0 +1,200 @@
+<ResponsiveLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <ResponsiveLayout>
+  <Grid>
+   <Columns>
+    <Column>8.0px</Column>
+    <Column>1.0fr</Column>
+    <Column>1.0fr</Column>
+    <Column>1.0fr</Column>
+    <Column>1.0fr</Column>
+    <Column>8.0px</Column>
+   </Columns>
+   <Rows>
+    <Row>8.0px</Row>
+    <Row>auto</Row>
+    <Row>auto</Row>
+    <Row>auto</Row>
+    <Row>auto</Row>
+    <Row>auto</Row>
+    <Row>auto</Row>
+   </Rows>
+   <ColumnGap>5.0px</ColumnGap>
+   <RowGap>5.0px</RowGap>
+   <Regions>
+    <Row>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+    </Row>
+    <Row>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell>
+      <Region name="senderaddress"></Region>
+     </Cell>
+     <Cell></Cell>
+    </Row>
+    <Row>
+     <Cell></Cell>
+     <Cell>
+      <Region name="recipientaddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="recipientaddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="recipientaddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="logo"></Region>
+     </Cell>
+     <Cell></Cell>
+    </Row>
+    <Row>
+     <Cell></Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell></Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell></Cell>
+     <Cell>
+      <Region name="contactinformationResponsive"></Region>
+     </Cell>
+     <Cell>
+      <Region name="contactinformationResponsive"></Region>
+     </Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+    </Row>
+    <Row>
+     <Cell></Cell>
+     <Cell>
+      <Region name="contactinformationResponsive"></Region>
+     </Cell>
+     <Cell>
+      <Region name="contactinformationResponsive"></Region>
+     </Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+     <Cell></Cell>
+    </Row>
+   </Regions>
+  </Grid>
+ </ResponsiveLayout>
+ <ResponsiveLayout>
+  <MediaQuery>
+   <MinMediaWidth>480.0px</MinMediaWidth>
+  </MediaQuery>
+  <Grid>
+   <Columns>
+    <Column>auto</Column>
+    <Column>auto</Column>
+    <Column>auto</Column>
+    <Column>1.0fr</Column>
+   </Columns>
+   <Rows>
+    <Row>auto</Row>
+    <Row>auto</Row>
+    <Row>auto</Row>
+    <Row>1.0fr</Row>
+   </Rows>
+   <ColumnGap>5.0px</ColumnGap>
+   <RowGap>5.0px</RowGap>
+   <Regions>
+    <Row>
+     <Cell>
+      <Region name="RecipientAddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="RecipientAddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="RecipientAddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Logo"></Region>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Region name="RecipientAddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="RecipientAddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="RecipientAddress"></Region>
+     </Cell>
+     <Cell>
+      <Region name="SenderAddress"></Region>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="ContactInformationResponsive"></Region>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="Body"></Region>
+     </Cell>
+     <Cell>
+      <Region name="ContactInformationResponsive"></Region>
+     </Cell>
+    </Row>
+   </Regions>
+  </Grid>
+ </ResponsiveLayout>
+</ResponsiveLayouts>

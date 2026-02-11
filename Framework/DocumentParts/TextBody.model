@@ -1,0 +1,8 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="MESSAGE" ref="\\Framework\Data\Message.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ContainerExtensionDef id="ContentExtension_TextBody"></ContainerExtensionDef>
+</ContainerPart>

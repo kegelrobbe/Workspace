@@ -1,0 +1,177 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Library\Templates\InvoiceHideEmptyParts.template" scriptResource="\\Framework\Scripts\LoadAll.js">
+ <DataDefinition>
+  <ParamDef name="BUSINESS" ref="\\Framework\Data\BUSINESS.datamodel" dataMappingRef="\\Framework\Data\Invoice.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="MESSAGE" ref="\\Framework\Data\Message.datamodel" dataMappingRef="\\Framework\Data\Message.mapping" constantDataRef="">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="DIN5008B">
+    <PageLayouts parentRef="Layouts\DIN5008B.pageLayouts"></PageLayouts>
+   </Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Header</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\Header.model"></ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Markings</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\Markings.model"></ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>SenderAddressLine</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\SenderAdressLine.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_SenderAddressLine">
+       <Par>
+        <Style parentName="Generic 9pt"></Style>
+        <Span>
+         <Text></Text>
+         <Data>$MESSAGE.Sender.Address.SingleLine</Data>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="Line">$MESSAGE.Sender.Address.SingleLine</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>ContactDetails</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\ContactDetails.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_ContactDetails">
+       <ContainerPart>
+        <ForEach><![CDATA[$MESSAGE.ContactDetails.Line]]></ForEach>
+        <DataDefinition></DataDefinition>
+        <Par>
+         <Style parentName="Generic 11pt"></Style>
+         <Span>
+          <Text></Text>
+          <Data>$Line</Data>
+         </Span>
+        </Par>
+       </ContainerPart>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="ContactDetails">$MESSAGE.ContactDetails</Param>
+     <Param name="Date">$MESSAGE.Date</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>RecipientAddress</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\RecipientAddress.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_RecipientAddress">
+       <ContainerPart>
+        <ForEach><![CDATA[$MESSAGE.Recipient.Address.Lines.Line]]></ForEach>
+        <DataDefinition></DataDefinition>
+        <Par>
+         <Style parentName="Generic 11pt"></Style>
+         <Span>
+          <Data>$Line</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </ContainerPart>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="Address">$MESSAGE.Recipient.Address</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <Container>
+    <Style>
+     <RegionRef>Body</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\TextBody.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_TextBody">
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceHeaderSubject.model">
+         <Param name="Invoice">$BUSINESS.Invoice</Param>
+         <Param name="ExchangedDocument">$BUSINESS.Invoice.CrossIndustryInvoice.ExchangedDocument</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="\\Library\Models\InvoiceSeller.model">
+         <Param name="SellerTradeParty">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeAgreement.SellerTradeParty</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceSellerTaxRepresentative.model">
+         <Param name="SellerTaxRepresentativeTradeParty">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeAgreement.SellerTaxRepresentativeTradeParty</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceShipTo.model">
+         <Param name="ShipToTradeParty">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeDelivery.ShipToTradeParty</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoicePayee.model">
+         <Param name="PayeeTradeParty">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeSettlement.PayeeTradeParty</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceIncludedNotes.model">
+         <Param name="ExchangedDocument">$BUSINESS.Invoice.CrossIndustryInvoice.ExchangedDocument</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceItemsTable.model">
+         <Param name="IncludedSupplyChainTradeLineItem">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.IncludedSupplyChainTradeLineItem</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceTaxBreakdown.model">
+         <Param name="ApplicableTradeTax">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeSettlement.ApplicableTradeTax</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceDocumentTotals.model">
+         <Param name="ApplicableHeaderTradeSettlement">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeSettlement</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoicePaymentTerms.model">
+         <Param name="ApplicableHeaderTradeSettlement">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeSettlement</Param>
+        </ContainerPartRef>
+       </Container>
+       <Container>
+        <ContainerPartRef uri="Models\InvoiceChargesAllowances.model">
+         <Param name="ApplicableHeaderTradeSettlement">$BUSINESS.Invoice.CrossIndustryInvoice.SupplyChainTradeTransaction.ApplicableHeaderTradeSettlement</Param>
+        </ContainerPartRef>
+       </Container>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="MESSAGE" type="datanoderef">$MESSAGE</Param>
+    </ContainerPartRef>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>FirstFooter</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\Footer.model"></ContainerPartRef>
+   </StaticContainer>
+  </Section>
+ </Document>
+</RootPart>

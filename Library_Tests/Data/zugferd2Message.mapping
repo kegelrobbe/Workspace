@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Framework\Data\Message.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false"
+            name="/Message/Date"
+            xpath="/rsm:CrossIndustryInvoice/rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line1"
+            xpath="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery/ram:ShipToTradeParty/ram:Name"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line2"
+            xpath="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery/ram:ShipToTradeParty/ram:PostalTradeAddress/ram:LineOne"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line3"
+            xpath="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery/ram:ShipToTradeParty/ram:PostalTradeAddress/ram:LineTwo"/>
+      <Rule copySubtree="false"
+            name="/Message/Recipient/Address/Line4"
+            xpath="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeDelivery/ram:ShipToTradeParty/ram:PostalTradeAddress/ram:LineThree"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/Line1"
+            xpath="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/Line2"
+            xpath="/rsm:CrossIndustryInvoice/rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:LineOne"/>
+   </Rules>
+   <Params/>
+   <Namespaces>
+      <Namespace prefix="udt">urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100</Namespace>
+      <Namespace prefix="rsm">urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100</Namespace>
+      <Namespace prefix="ram">urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100</Namespace>
+   </Namespaces>
+</Mapping>

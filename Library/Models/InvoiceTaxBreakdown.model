@@ -1,0 +1,159 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ApplicableTradeTax" multiple="true" ref="\\Framework\Data\ApplicableTradeTax.datamodel">
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <Table>
+  <Headers>
+   <Header>
+    <Row>
+     <Cell>
+      <ColSpan><![CDATA[6]]></ColSpan>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Tax Breakdown</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Category</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Line Total Basis Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Allowance Charge Basis Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Basis Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Rate Applicable Percent</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Calculated Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Header>
+  </Headers>
+  <Columns></Columns>
+  <Style parentName="RibbonsLightDense"></Style>
+  <TablePart>
+   <ForEach><![CDATA[$ApplicableTradeTax]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <Row>
+    <Cell>
+     <Container>
+      <ContainerPartRef uri="Models\InvoiceTaxCategoryName.model">
+       <Param name="TaxCategoryCode">$ApplicableTradeTax.CategoryCode</Param>
+      </ContainerPartRef>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$ApplicableTradeTax.LineTotalBasisAmount.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$ApplicableTradeTax.AllowanceChargeBasisAmount</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <Span>
+        <Data>$ApplicableTradeTax.BasisAmount.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$ApplicableTradeTax.RateApplicablePercent</Data>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$ApplicableTradeTax.CalculatedAmount.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+  </TablePart>
+ </Table>
+</ContainerPart>

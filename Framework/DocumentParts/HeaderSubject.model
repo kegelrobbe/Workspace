@@ -1,0 +1,6 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Subject" ref="\\Framework\Data\Subject.datamodel"></ParamDef>
+ </DataDefinition>
+ <ContainerExtensionDef id="ContentExtension_HeaderSubject"></ContainerExtensionDef>
+</ContainerPart>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false"
+         name="ShipToTradeParty"
+         ref="\\Framework\Data\TradeParty.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="ActualDeliverySupplyChainEvent">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false" name="OccurrenceDateTime">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="DateTimeString">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="format"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="DespatchAdviceReferencedDocument">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="IssuerAssignedID"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="TypeCode"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false" name="ReceivingAdviceReferencedDocument">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="IssuerAssignedID"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="TypeCode"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

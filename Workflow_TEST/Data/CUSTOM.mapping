@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Workflow_TEST\Data\CUSTOM.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true" name="/CUSTOM" xpath="/CustomerOrder"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

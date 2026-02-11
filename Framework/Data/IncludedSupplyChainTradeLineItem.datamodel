@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="AssociatedDocumentLineDocument">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="LineID"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false" name="IncludedNote">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="Content"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="SpecifiedTradeProduct">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false" name="GlobalID">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="schemeID"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="NUMBER"
+               hierarchical="FLAT"
+               multiple="false"
+               name="value"
+               searchable="false">
+            <Settings>
+               <Subtype>Number4NKdottedDecimal</Subtype>
+               <Script>$current.parent().valueOf();</Script>
+            </Settings>
+         </Node>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="SellerAssignedID"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="BuyerAssignedID"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="Name"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="Description"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE">
+               <Values/>
+            </Validation>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="true" name="ApplicableProductCharacteristic">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="Description"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="Value"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="true" name="DesignatedProductClassification">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="ClassCode">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="listID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number4NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="OriginTradeCountry">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ID"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="SpecifiedLineTradeAgreement">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false" name="BuyerOrderReferencedDocument">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="IssuerAssignedID"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="TypeCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="false" name="GrossPriceProductTradePrice">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="ChargeAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node multiple="false" name="BasisQuantity">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="unitCode"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number4NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="NetPriceProductTradePrice">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="ChargeAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node multiple="false" name="BasisQuantity">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="unitCode"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number4NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="SpecifiedLineTradeDelivery">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false" name="BilledQuantity">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="unitCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="NUMBER"
+               hierarchical="FLAT"
+               multiple="false"
+               name="value"
+               searchable="false">
+            <Settings>
+               <Subtype>Number4NKdottedDecimal</Subtype>
+               <Script>$current.parent().valueOf();</Script>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="SpecifiedLineTradeSettlement">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false" name="ApplicableTradeTax">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="CalculatedAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="TypeCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node multiple="false" name="BasisAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="CategoryCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="NUMBER"
+               hierarchical="FLAT"
+               multiple="false"
+               name="RateApplicablePercent"
+               searchable="false">
+            <Settings>
+               <Subtype>Number2NKdottedDecimal</Subtype>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="false" name="BillingSpecifiedPeriod">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="StartDateTime">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="DateTimeString">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="format"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE">
+                        <Values/>
+                     </Validation>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="value"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE">
+                        <Values/>
+                     </Validation>
+                     <Script>$current.parent().valueOf();</Script>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="EndDateTime">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="DateTimeString">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="format"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE">
+                        <Values/>
+                     </Validation>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="value"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE">
+                        <Values/>
+                     </Validation>
+                     <Script>$current.parent().valueOf();</Script>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="true" name="SpecifiedTradeAllowanceCharge">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="ChargeIndicator">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="Indicator"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="CalculationPercent"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node multiple="false" name="BasisAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ActualAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ReasonCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="Reason"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="false" name="SpecifiedTradeSettlementLineMonetarySummation">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="LineTotalAmount">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="currencyID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE">
+                     <Values/>
+                  </Validation>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="NUMBER"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="value"
+                  searchable="false">
+               <Settings>
+                  <Subtype>Number2NKdottedDecimal</Subtype>
+                  <Script>$current.parent().valueOf();</Script>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="AdditionalReferencedDocument">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="IssuerAssignedID"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="TypeCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="false" name="ReceivableSpecifiedTradeAccountingAccount">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ID"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE">
+                  <Values/>
+               </Validation>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+</DataModel>

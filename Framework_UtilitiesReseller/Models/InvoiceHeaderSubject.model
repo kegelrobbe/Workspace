@@ -1,0 +1,29 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ExchangedDocument" ref="\\Framework\Data\ExchangedDocument.datamodel">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Invoice" ref="\\Framework\Data\Invoice.datamodel" optional="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Style>
+     <FontStyle>bold</FontStyle>
+    </Style>
+    <Data>$ExchangedDocument.Name</Data>
+    <Text> (TypeCode </Text>
+    <Data>$ExchangedDocument.TypeCode</Data>
+    <Text>) #</Text>
+    <Data>$ExchangedDocument.ID</Data>
+    <Text> - Issue Date: </Text>
+   </Span>
+   <ParPartRef uri="\\Framework\Models\FormattedDate.model">
+    <Param name="DateTimeString">$ExchangedDocument.IssueDateTime.DateTimeString.value</Param>
+    <Param name="DateTimeFormat">$ExchangedDocument.IssueDateTime.DateTimeString.format</Param>
+   </ParPartRef>
+  </Par>
+ </Container>
+</ContainerPart>

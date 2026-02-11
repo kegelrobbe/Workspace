@@ -1,0 +1,70 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\DIN5008\Vorlagen\Brief.template" scriptResource="\\Framework\Scripts\LoadAll.js">
+ <DataDefinition>
+  <ParamDef name="MESSAGE" ref="\\Framework\Data\Message.datamodel" dataSourceName="DATA" dataMappingRef="\\Framework\Data\Message.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="LetterUS"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Markings</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\Markings.model"></ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Logo</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\Logo.model">
+     <Param name="Header">$MESSAGE.Header</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>SenderAddressLine</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\SenderAdressLine.model">
+     <Param name="Line">$MESSAGE.Sender.Address.SingleLine</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>ContactDetails</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\ContactDetails.model">
+     <Param name="Date">$MESSAGE.Date</Param>
+     <Param name="ContactDetails">$MESSAGE.ContactDetails</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>RecipientAddress</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\RecipientAddress.model">
+     <Param name="Address">$MESSAGE.Recipient.Address</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <Container>
+    <ContainerPartRef id="BodyText" uri="\\Framework\DocumentParts\TextBody.model">
+     <Param name="MESSAGE">$MESSAGE</Param>
+    </ContainerPartRef>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Footer</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\Footer.model"></ContainerPartRef>
+   </StaticContainer>
+  </Section>
+ </Document>
+</RootPart>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Framework\Data\Message.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true" name="/Message" xpath="/DATA"/>
+      <Rule copySubtree="true"
+            name="/Message/ComplimentaryClose"
+            xpath="ComplimentaryClose"/>
+      <Rule copySubtree="true"
+            name="/Message/ContactDetails"
+            xpath="ContactDetails"/>
+      <Rule copySubtree="true" name="/Message/Date" xpath="Date"/>
+      <Rule copySubtree="false" name="/Message/Header" xpath="Header"/>
+      <Rule copySubtree="true"
+            name="/Message/Header/GraphicName"
+            xpath="GraphicName"/>
+      <Rule copySubtree="false" name="/Message/Recipient" xpath="Recipient"/>
+      <Rule copySubtree="false"
+            name="/Message/Recipient/Address"
+            xpath="Address"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line1"
+            xpath="Line1"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line2"
+            xpath="Line2"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line3"
+            xpath="Line3"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/Line4"
+            xpath="Line4"/>
+      <Rule copySubtree="true"
+            name="/Message/Recipient/Address/SingleLine"
+            xpath="SingleLine"/>
+      <Rule copySubtree="true"
+            name="/Message/SalutatoryAddress"
+            xpath="SalutatoryAddress"/>
+      <Rule copySubtree="false" name="/Message/Sender" xpath="Sender"/>
+      <Rule copySubtree="false" name="/Message/Sender/Address" xpath="Address"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/Line1"
+            xpath="Line1"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/Line2"
+            xpath="Line2"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/Line3"
+            xpath="Line3"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/Line4"
+            xpath="Line4"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Address/SingleLine"
+            xpath="SingleLine"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/Faksimile"
+            xpath="Faksimile"/>
+      <Rule copySubtree="true"
+            name="/Message/Sender/FaksimileLabel"
+            xpath="FaksimileLabel"/>
+      <Rule copySubtree="true" name="/Message/Subject" xpath="Subject"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

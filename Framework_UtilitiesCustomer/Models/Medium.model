@@ -1,0 +1,25 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Medium" ref="\\Framework_UtilitiesCustomer\Data\block_medium.datamodel">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Medium: </Text>
+    <Data>$Medium.rzm_medium_druckbezeichnung</Data>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <ForEach><![CDATA[$Medium.block_tarif]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <ContainerPartRef uri="Models\Tarif.model">
+    <Param name="Tarif">$block_tarif</Param>
+   </ContainerPartRef>
+  </ContainerPart>
+ </Container>
+</ContainerPart>

@@ -1,0 +1,25 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Verbrauchsart" ref="\\Framework_UtilitiesCustomer\Data\block_verbrauchsart.datamodel">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Verbrauchsart: </Text>
+    <Data>$Verbrauchsart.rzv_verbrauchsart</Data>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <ForEach><![CDATA[$Verbrauchsart.block_medium]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <ContainerPartRef uri="Models\Medium.model">
+    <Param name="Medium">$block_medium</Param>
+   </ContainerPartRef>
+  </ContainerPart>
+ </Container>
+</ContainerPart>

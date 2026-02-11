@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="id"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE"/>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false" name="rechnungsformular">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false"
+            name="start"
+            ref="\\Framework_UtilitiesCustomer\Data\start.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false"
+            name="block_steuerung_des_druckes"
+            ref="\\Framework_UtilitiesCustomer\Data\block_steuerung_des_druckes.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false" name="block_rechnungen">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="true"
+               name="block_rechnung"
+               ref="\\Framework_UtilitiesCustomer\Data\block_rechnung.datamodel">
+            <Settings>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="false"
+            name="ende"
+            ref="\\Framework_UtilitiesCustomer\Data\ende.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

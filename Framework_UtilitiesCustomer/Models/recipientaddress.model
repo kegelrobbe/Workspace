@@ -1,0 +1,8 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="BlockAnschriften" ref="\\Framework_UtilitiesCustomer\Data\block_anschriften.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ContainerExtensionDef id="recepientaddress"></ContainerExtensionDef>
+</ContainerPart>

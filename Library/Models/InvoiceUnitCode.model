@@ -1,0 +1,41 @@
+<ParPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="unitCode">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <DataNodeDef name="unitCodeText">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Script><![CDATA[var unitCode = $unitCode.valueOf();
+var unitText = unitCode;
+switch (unitCode)
+{
+	case "H87" : unitText = "pcs"; break;
+	case "KMT" : unitText = "km"; break;
+	case "MTK" : unitText = "m²"; break;
+	case "KGM" : unitText = "kg"; break;
+	case "HUR" : unitText = "h"; break;
+	case "DAY" : unitText = "d"; break;
+	case "C62" : unitText = "one";break;
+	case "MWH" : unitText = "MWh";break;
+}
+unitText;]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+ </DataDefinition>
+ <Span>
+  <Text> </Text>
+  <Data>$unitCodeText</Data>
+  <Text></Text>
+ </Span>
+</ParPart>

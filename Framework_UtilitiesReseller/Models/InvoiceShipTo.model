@@ -1,0 +1,167 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ShipToTradeParty" ref="\\Framework\Data\TradeParty.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Table>
+   <Headers>
+    <Header>
+     <Row>
+      <Cell>
+       <ColSpan><![CDATA[2]]></ColSpan>
+       <Container>
+        <Par>
+         <Style parentName="Generic 10pt"></Style>
+         <Span>
+          <Text>Ship To</Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </Header>
+   </Headers>
+   <Columns>
+    <Column>
+     <Style>
+      <ColumnWidth>98108.0mpt</ColumnWidth>
+     </Style>
+    </Column>
+    <Column>
+     <Style>
+      <ColumnWidth>auto</ColumnWidth>
+     </Style>
+    </Column>
+   </Columns>
+   <Style parentName="RibbonsLightDense"></Style>
+   <TablePart>
+    <VisibleIf><![CDATA[$ShipToTradeParty.ID.value.notEmpty()]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>ID</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Data>$ShipToTradeParty.ID.instance(0).value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </TablePart>
+   <TablePart>
+    <VisibleIf><![CDATA[$ShipToTradeParty.GlobalID.value.notEmpty()]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Span>
+         <Text>Global ID</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Span>
+         <Data>$ShipToTradeParty.GlobalID.instance(-1).value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </TablePart>
+   <Row>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Text>Name</Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$ShipToTradeParty.Name</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+   <Row>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Text>Address</Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <ContainerPartRef uri="\\Framework_UtilitiesReseller\Models\PostalTradeAddress.model">
+       <Param name="PostalTradeAddress">$ShipToTradeParty.PostalTradeAddress</Param>
+      </ContainerPartRef>
+     </Container>
+    </Cell>
+   </Row>
+   <Row>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Text>Tax ID </Text>
+       </Span>
+       <ParPart>
+        <VisibleIf><![CDATA[$ShipToTradeParty.SpecifiedTaxRegistration.ID.schemeID.notEmpty()]]></VisibleIf>
+        <DataDefinition></DataDefinition>
+        <Span>
+         <Text>(</Text>
+         <Data>$ShipToTradeParty.SpecifiedTaxRegistration.instance(0).ID.schemeID</Data>
+         <Text>)</Text>
+        </Span>
+       </ParPart>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$ShipToTradeParty.SpecifiedTaxRegistration.instance(0).ID.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+  </Table>
+ </Container>
+</ContainerPart>

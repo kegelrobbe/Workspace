@@ -1,0 +1,117 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="70866.0mpt" anchorSide="same"></Left>
+   <Top distance="279212.0mpt" anchorSide="same"></Top>
+   <Right distance="170079.0mpt" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="RecipientAddress">
+   <Left distance="56692.0mpt" anchorSide="same"></Left>
+   <Top distance="126707.0mpt" anchorSide="same"></Top>
+   <Right distance="297639.0mpt" anchorSide="same"></Right>
+   <Bottom distance="637797.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="ContactDetails">
+   <Left distance="425196.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="416693.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Header">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="170079.0mpt" anchorSide="same"></Right>
+   <Bottom distance="765354.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="SenderAddressLine">
+   <Left distance="2.0cm" anchorSide="same"></Left>
+   <Top distance="2.7cm" anchorSide="same"></Top>
+   <Right distance="297639.0mpt" anchorSide="same"></Right>
+   <Bottom distance="715181.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Markings">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="76534.0mpt" anchorSide="same"></Top>
+   <Right distance="538582.0mpt" anchorSide="same"></Right>
+   <Bottom distance="0.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Footer">
+   <Left distance="425196.0mpt" anchorSide="same"></Left>
+   <Top distance="425196.0mpt" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </First>
+ <Front>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="70866.0mpt" anchorSide="same"></Left>
+   <Top distance="28346.0mpt" anchorSide="same"></Top>
+   <Right distance="170079.0mpt" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Header">
+   <Left distance="425196.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="416693.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Footer">
+   <Left distance="425196.0mpt" anchorSide="same"></Left>
+   <Top distance="425196.0mpt" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </Front>
+ <Back>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Header">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="0.0mpt" anchorSide="same"></Right>
+   <Bottom distance="813543.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Body">
+   <Left distance="28346.0mpt" anchorSide="same"></Left>
+   <Top distance="28346.0mpt" anchorSide="same"></Top>
+   <Right distance="70866.0mpt" anchorSide="same"></Right>
+   <Bottom distance="49039.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Footer">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="792850.0mpt" anchorSide="same"></Top>
+   <Right distance="56688.0mpt" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </Back>
+ <DefaultPageLayout>
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="70866.0mpt" anchorSide="same"></Left>
+   <Top distance="28346.0mpt" anchorSide="same"></Top>
+   <Right distance="170079.0mpt" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Header">
+   <Left distance="425196.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="416693.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Footer">
+   <Left distance="425196.0mpt" anchorSide="same"></Left>
+   <Top distance="425196.0mpt" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="14173.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </DefaultPageLayout>
+</PageLayouts>

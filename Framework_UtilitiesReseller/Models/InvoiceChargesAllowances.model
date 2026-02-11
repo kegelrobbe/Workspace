@@ -1,0 +1,225 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ApplicableHeaderTradeSettlement" ref="\\Framework\Data\ApplicableHeaderTradeSettlement.datamodel">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <Table>
+  <Headers>
+   <Header>
+    <Row>
+     <Cell>
+      <ColSpan><![CDATA[6]]></ColSpan>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Charges &amp; Discounts/Allowances</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Reason </Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Calculation  Percent</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Basis Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Quantity</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Tax Rate Percent</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Actual Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Header>
+  </Headers>
+  <Columns>
+   <Column>
+    <Style>
+     <ColumnWidth>110952.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+  </Columns>
+  <Style parentName="RibbonsLightDense"></Style>
+  <TablePart>
+   <ForEach alias="SpecifiedTradeAllowanceCharge"><![CDATA[$ApplicableHeaderTradeSettlement.SpecifiedTradeAllowanceCharge]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <Row>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$SpecifiedTradeAllowanceCharge.Reason</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <Span>
+        <Data>$SpecifiedTradeAllowanceCharge.CalculationPercent</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <Span>
+        <Data>$SpecifiedTradeAllowanceCharge.BasisAmount.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <Span>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <Span>
+        <Data>$SpecifiedTradeAllowanceCharge.CategoryTradeTax.RateApplicablePercent</Data>
+        <Text> (</Text>
+        <Data>$SpecifiedTradeAllowanceCharge.CategoryTradeTax.TypeCode</Data>
+        <Text>, </Text>
+        <Data>$SpecifiedTradeAllowanceCharge.CategoryTradeTax.CategoryCode</Data>
+        <Text>)</Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <ParPart>
+        <VisibleIf><![CDATA[$SpecifiedTradeAllowanceCharge.ChargeIndicator.Indicator.valueOf()=="false"]]></VisibleIf>
+        <DataDefinition></DataDefinition>
+        <Span>
+         <Text>-</Text>
+        </Span>
+       </ParPart>
+       <Span>
+        <Data>$SpecifiedTradeAllowanceCharge.ActualAmount.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+  </TablePart>
+ </Table>
+</ContainerPart>

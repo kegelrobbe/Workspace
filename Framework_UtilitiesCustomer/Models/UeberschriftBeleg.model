@@ -1,0 +1,29 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="block_rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel"></ParamDef>
+ </DataDefinition>
+ <Container>
+  <Style>
+   <SpaceAfter resolution="combine">0.3cm</SpaceAfter>
+  </Style>
+  <Par>
+   <Span>
+    <Style>
+     <FontStyle>bold</FontStyle>
+    </Style>
+    <Data>$block_rechnungsdaten.stamm_rechnungsart</Data>
+    <Text> </Text>
+    <Data>$block_rechnungsdaten.stamm_rechnungsnummer</Data>
+    <Text> </Text>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Text>für den Zeitraum vom </Text>
+    <Data>$block_rechnungsdaten.stamm_rechnung_von</Data>
+    <Text> bis </Text>
+    <Data>$block_rechnungsdaten.stamm_rechnung_bis</Data>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="BuyerReference"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="SellerTradeParty"
+         ref="\\Framework\Data\TradeParty.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="BuyerTradeParty"
+         ref="\\Framework\Data\TradeParty.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="SellerTaxRepresentativeTradeParty"
+         ref="\\Framework\Data\TradeParty.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="SellerOrderReferencedDocument"
+         ref="\\Framework\Data\SellerOrderReferencedDocument.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="BuyerOrderReferencedDocument"
+         ref="\\Framework\Data\BuyerOrderReferencedDocument.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="ContractReferencedDocument"
+         ref="\\Framework\Data\ContractReferencedDocument.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="true"
+         name="AdditionalReferencedDocument"
+         ref="\\Framework\Data\AdditionalReferencedDocument.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="SpecifiedProcuringProject"
+         ref="\\Framework\Data\SpecifiedProcuringProject.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

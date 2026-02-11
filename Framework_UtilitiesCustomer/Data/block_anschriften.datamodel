@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="block_anschriften_rechempf">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="true"
+            name="anschriften"
+            ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false" name="block_anschriften_vbrst">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false"
+            name="anschriften"
+            ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false" name="block_anschriften_rk">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false"
+            name="anschriften"
+            ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false" name="block_anschriften_sv">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false"
+            name="anschriften"
+            ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

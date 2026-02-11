@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="id"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="block_rechnungsdaten"
+         ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="block_kundendaten"
+         ref="\\Framework_UtilitiesCustomer\Data\block_kundendaten.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="block_anschriften"
+         ref="\\Framework_UtilitiesCustomer\Data\block_anschriften.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="block_verbrauchsstelle"
+         ref="\\Framework_UtilitiesCustomer\Data\block_verbrauchsstelle.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="block_fakturierte_abschlaege"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="block_rechnungszeilen"
+         ref="\\Framework_UtilitiesCustomer\Data\block_rechnungszeilen.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="block_saldeninfo"
+         ref="\\Framework_UtilitiesCustomer\Data\block_saldeninfo.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

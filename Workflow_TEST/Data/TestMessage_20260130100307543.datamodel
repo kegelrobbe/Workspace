@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="rsm:ExchangedDocumentContext">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false" name="ram:GuidelineSpecifiedDocumentContextParameter">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ram:ID"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="rsm:ExchangedDocument">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="ram:ID"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node data-type="TEXT"
+            hierarchical="FLAT"
+            multiple="false"
+            name="ram:TypeCode"
+            searchable="false">
+         <Settings>
+            <Validation allow-empty-value="true"
+                        dialog-field=""
+                        label=""
+                        operator="ANY"
+                        validation-type="ANY_VALUE"/>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false" name="ram:IssueDateTime">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="udt:DateTimeString"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+      <Node multiple="true" name="ram:IncludedNote">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ram:Content"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ram:SubjectCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+      </Node>
+   </Node>
+   <Node multiple="false" name="rsm:SupplyChainTradeTransaction">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="true" name="ram:IncludedSupplyChainTradeLineItem">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="ram:AssociatedDocumentLineDocument">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:LineID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedTradeProduct">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:GlobalID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:Name"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="false" name="ram:OriginTradeCountry">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:ID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedLineTradeAgreement">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="ram:BuyerOrderReferencedDocument">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:LineID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:NetPriceProductTradePrice">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:ChargeAmount"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:BasisQuantity"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedLineTradeDelivery">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:BilledQuantity"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedLineTradeSettlement">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="ram:ApplicableTradeTax">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:TypeCode"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CategoryCode"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:RateApplicablePercent"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:BillingSpecifiedPeriod">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node multiple="false" name="ram:StartDateTime">
+                  <Settings>
+                     <Script/>
+                  </Settings>
+                  <Node data-type="TEXT"
+                        hierarchical="FLAT"
+                        multiple="false"
+                        name="udt:DateTimeString"
+                        searchable="false">
+                     <Settings>
+                        <Validation allow-empty-value="true"
+                                    dialog-field=""
+                                    label=""
+                                    operator="ANY"
+                                    validation-type="ANY_VALUE"/>
+                        <Script/>
+                     </Settings>
+                  </Node>
+               </Node>
+               <Node multiple="false" name="ram:EndDateTime">
+                  <Settings>
+                     <Script/>
+                  </Settings>
+                  <Node data-type="TEXT"
+                        hierarchical="FLAT"
+                        multiple="false"
+                        name="udt:DateTimeString"
+                        searchable="false">
+                     <Settings>
+                        <Validation allow-empty-value="true"
+                                    dialog-field=""
+                                    label=""
+                                    operator="ANY"
+                                    validation-type="ANY_VALUE"/>
+                        <Script/>
+                     </Settings>
+                  </Node>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:SpecifiedTradeSettlementLineMonetarySummation">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:LineTotalAmount"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="ram:ApplicableHeaderTradeAgreement">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ram:BuyerReference"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node multiple="false" name="ram:SellerTradeParty">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:GlobalID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:Name"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="false" name="ram:SpecifiedLegalOrganization">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:ID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:TradingBusinessName"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:DefinedTradeContact">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:PersonName"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node multiple="false" name="ram:TelephoneUniversalCommunication">
+                  <Settings>
+                     <Script/>
+                  </Settings>
+                  <Node data-type="TEXT"
+                        hierarchical="FLAT"
+                        multiple="false"
+                        name="ram:CompleteNumber"
+                        searchable="false">
+                     <Settings>
+                        <Validation allow-empty-value="true"
+                                    dialog-field=""
+                                    label=""
+                                    operator="ANY"
+                                    validation-type="ANY_VALUE"/>
+                        <Script/>
+                     </Settings>
+                  </Node>
+               </Node>
+               <Node multiple="false" name="ram:EmailURIUniversalCommunication">
+                  <Settings>
+                     <Script/>
+                  </Settings>
+                  <Node data-type="TEXT"
+                        hierarchical="FLAT"
+                        multiple="false"
+                        name="ram:URIID"
+                        searchable="false">
+                     <Settings>
+                        <Validation allow-empty-value="true"
+                                    dialog-field=""
+                                    label=""
+                                    operator="ANY"
+                                    validation-type="ANY_VALUE"/>
+                        <Script/>
+                     </Settings>
+                  </Node>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:PostalTradeAddress">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:PostcodeCode"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:LineOne"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CityName"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CountryID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:URIUniversalCommunication">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:URIID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="true" name="ram:SpecifiedTaxRegistration">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:ID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:BuyerTradeParty">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:ID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:Name"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="false" name="ram:DefinedTradeContact">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:PersonName"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node multiple="false" name="ram:EmailURIUniversalCommunication">
+                  <Settings>
+                     <Script/>
+                  </Settings>
+                  <Node data-type="TEXT"
+                        hierarchical="FLAT"
+                        multiple="false"
+                        name="ram:URIID"
+                        searchable="false">
+                     <Settings>
+                        <Validation allow-empty-value="true"
+                                    dialog-field=""
+                                    label=""
+                                    operator="ANY"
+                                    validation-type="ANY_VALUE"/>
+                        <Script/>
+                     </Settings>
+                  </Node>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:PostalTradeAddress">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:PostcodeCode"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:LineOne"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CityName"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CountryID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:URIUniversalCommunication">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:URIID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:ContractReferencedDocument">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:IssuerAssignedID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="ram:ApplicableHeaderTradeDelivery">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node multiple="false" name="ram:ShipToTradeParty">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:ID"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:Name"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="false" name="ram:PostalTradeAddress">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:PostcodeCode"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:LineOne"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CityName"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:CountryID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:ActualDeliverySupplyChainEvent">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="ram:OccurrenceDateTime">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="udt:DateTimeString"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+      </Node>
+      <Node multiple="false" name="ram:ApplicableHeaderTradeSettlement">
+         <Settings>
+            <Script/>
+         </Settings>
+         <Node data-type="TEXT"
+               hierarchical="FLAT"
+               multiple="false"
+               name="ram:InvoiceCurrencyCode"
+               searchable="false">
+            <Settings>
+               <Validation allow-empty-value="true"
+                           dialog-field=""
+                           label=""
+                           operator="ANY"
+                           validation-type="ANY_VALUE"/>
+               <Script/>
+            </Settings>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedTradeSettlementPaymentMeans">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:TypeCode"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:Information"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node multiple="false" name="ram:PayeePartyCreditorFinancialAccount">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="ram:IBANID"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:ApplicableTradeTax">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:CalculatedAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:TypeCode"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:BasisAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:CategoryCode"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:RateApplicablePercent"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:BillingSpecifiedPeriod">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="ram:StartDateTime">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="udt:DateTimeString"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+            <Node multiple="false" name="ram:EndDateTime">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="udt:DateTimeString"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedTradePaymentTerms">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node multiple="false" name="ram:DueDateDateTime">
+               <Settings>
+                  <Script/>
+               </Settings>
+               <Node data-type="TEXT"
+                     hierarchical="FLAT"
+                     multiple="false"
+                     name="udt:DateTimeString"
+                     searchable="false">
+                  <Settings>
+                     <Validation allow-empty-value="true"
+                                 dialog-field=""
+                                 label=""
+                                 operator="ANY"
+                                 validation-type="ANY_VALUE"/>
+                     <Script/>
+                  </Settings>
+               </Node>
+            </Node>
+         </Node>
+         <Node multiple="false" name="ram:SpecifiedTradeSettlementHeaderMonetarySummation">
+            <Settings>
+               <Script/>
+            </Settings>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:LineTotalAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:ChargeTotalAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:AllowanceTotalAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:TaxBasisTotalAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:TaxTotalAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:RoundingAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:GrandTotalAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:TotalPrepaidAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+            <Node data-type="TEXT"
+                  hierarchical="FLAT"
+                  multiple="false"
+                  name="ram:DuePayableAmount"
+                  searchable="false">
+               <Settings>
+                  <Validation allow-empty-value="true"
+                              dialog-field=""
+                              label=""
+                              operator="ANY"
+                              validation-type="ANY_VALUE"/>
+                  <Script/>
+               </Settings>
+            </Node>
+         </Node>
+      </Node>
+   </Node>
+</DataModel>

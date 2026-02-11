@@ -1,0 +1,101 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ApplicableHeaderTradeSettlement" ref="\\Framework\Data\ApplicableHeaderTradeSettlement.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Table>
+  <Headers>
+   <Header>
+    <Row>
+     <Cell>
+      <ColSpan><![CDATA[3]]></ColSpan>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Specified Trade Payment Terms</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Description</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Due Date</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Direct Debit Mandate ID</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Header>
+  </Headers>
+  <Columns></Columns>
+  <Style parentName="RibbonsLightDense"></Style>
+  <TablePart>
+   <ForEach alias="SpecifiedTradePaymentTerms"><![CDATA[$ApplicableHeaderTradeSettlement.SpecifiedTradePaymentTerms]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <Row>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$SpecifiedTradePaymentTerms.Description</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <ParPartRef uri="\\Framework\Models\FormattedDate.model">
+        <Param name="DateTimeString">$SpecifiedTradePaymentTerms.DueDateDateTime.DateTimeString.value</Param>
+        <Param name="DateTimeFormat">$SpecifiedTradePaymentTerms.DueDateDateTime.DateTimeString.format</Param>
+       </ParPartRef>
+       <Span>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Span>
+        <Data>$SpecifiedTradePaymentTerms.DirectDebitMandateID</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+  </TablePart>
+ </Table>
+</ContainerPart>

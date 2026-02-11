@@ -1,0 +1,69 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="testcase">
+ <TestCase name="testcase" includeInRegressionTool="false">
+  <Root base="Library">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Metadata">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="State" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Created]]></Value>
+      </DataNode>
+      <DataNode name="TestMode" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="OutputMode" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="DocumentLanguage">
+       <Value><![CDATA[string:USA]]></Value>
+      </DataNode>
+      <DataNode name="ValidationState" valueChanged="manually">
+       <Value><![CDATA[string:OK]]></Value>
+      </DataNode>
+      <DataNode name="Editor">
+       <Value><![CDATA[string:]]></Value>
+       <DataNode name="DefaultDocumentName" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+       <DataNode name="DefaultDocumentDescription" valueChanged="fromDataSource">
+        <Value><![CDATA[string:]]></Value>
+       </DataNode>
+      </DataNode>
+      <DataNode name="InitialDataBinding" valueChanged="fromDataSource">
+       <Value><![CDATA[string:\library\Library\Models\InvoiceHeaderSubject.model.template]]></Value>
+      </DataNode>
+     </DataNode>
+    </Data>
+    <ContainerPartInstance partIndex="0">
+     <Data>
+      <DataNode name="ExchangedDocument">
+       <DataNode name="IssueDateTime">
+        <DataNode name="DateTimeString">
+         <DataNode name="value">
+          <Value><![CDATA[string:]]></Value>
+         </DataNode>
+        </DataNode>
+       </DataNode>
+      </DataNode>
+     </Data>
+     <ContainerPartInstance partIndex="0">
+      <ContainerPartInstance partIndex="0">
+       <Data>
+        <DataNode name="formattedDTString"></DataNode>
+        <DataNodeRef handle="0:0/0/0/0" name="DateTimeString"></DataNodeRef>
+        <DataNodeRef handle="0:0/0/0:0" name="DateTimeFormat"></DataNodeRef>
+        <DataNode name="Prefix">
+         <Value><![CDATA[string:Issue Date:]]></Value>
+        </DataNode>
+        <DataNode name="Suffix">
+         <Value><![CDATA[string:]]></Value>
+        </DataNode>
+       </Data>
+       <ContainerPartInstance partIndex="0"></ContainerPartInstance>
+      </ContainerPartInstance>
+     </ContainerPartInstance>
+    </ContainerPartInstance>
+   </RootPartInstance>
+  </Root>
+ </TestCase>
+</TestCases>

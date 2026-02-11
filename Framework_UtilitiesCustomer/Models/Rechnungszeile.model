@@ -1,0 +1,33 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Rechnungszeile" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungszeile.datamodel">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Rechnungszeile: </Text>
+    <Data>$Rechnungszeile.rz_zaehler_nummer</Data>
+    <Text> // </Text>
+    <Data>$Rechnungszeile.rz_von</Data>
+    <Text> - </Text>
+    <Data>$Rechnungszeile.rz_bis</Data>
+    <Text> // </Text>
+    <Data>$Rechnungszeile.rz_brutto</Data>
+    <Text> </Text>
+    <Data>$Rechnungsdaten.stamm_erstellungswaehrung</Data>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <ForEach><![CDATA[$Rechnungszeile.block_rechnungsteilzeile]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <ContainerPartRef uri="Models\Teilzeile.model">
+    <Param name="Teilzeile">$block_rechnungsteilzeile</Param>
+   </ContainerPartRef>
+  </ContainerPart>
+ </Container>
+</ContainerPart>

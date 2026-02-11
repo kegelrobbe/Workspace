@@ -1,0 +1,61 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ExchangedDocument" ref="\\Framework\Data\ExchangedDocument.datamodel"></ParamDef>
+ </DataDefinition>
+ <Table>
+  <Headers>
+   <Header>
+    <Row>
+     <Cell>
+      <ColSpan><![CDATA[2]]></ColSpan>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Included Notes</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Header>
+  </Headers>
+  <Columns>
+   <Column>
+    <Style>
+     <ColumnWidth>124358.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+  </Columns>
+  <Style parentName="RibbonsLightDense"></Style>
+  <TablePart>
+   <ForEach><![CDATA[$ExchangedDocument.IncludedNote]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <Row>
+    <Cell>
+     <Container>
+      <ContainerPartRef uri="Models\InvoiceIncludedNoteSubject.model">
+       <Param name="SubjectCode">$IncludedNote.SubjectCode</Param>
+      </ContainerPartRef>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Data>$IncludedNote.Content</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+  </TablePart>
+ </Table>
+</ContainerPart>

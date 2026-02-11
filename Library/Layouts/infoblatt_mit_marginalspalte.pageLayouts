@@ -1,0 +1,41 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="203692.0mpt" anchorSide="same"></Left>
+   <Top distance="225637.0mpt" anchorSide="same"></Top>
+   <Right distance="28465.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28347.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="marginalie">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="403371.0mpt" anchorSide="same"></Right>
+   <Bottom distance="0.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="bild">
+   <Left distance="382275.0mpt" anchorSide="same"></Left>
+   <Top distance="27778.0mpt" anchorSide="same"></Top>
+   <Right distance="28465.0mpt" anchorSide="same"></Right>
+   <Bottom distance="629576.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </First>
+ <DefaultPageLayout>
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="203811.0mpt" anchorSide="same"></Left>
+   <Top distance="28346.0mpt" anchorSide="same"></Top>
+   <Right distance="28346.0mpt" anchorSide="same"></Right>
+   <Bottom distance="28347.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="marginalie">
+   <Left distance="0.0mpt" anchorSide="same"></Left>
+   <Top distance="0.0mpt" anchorSide="same"></Top>
+   <Right distance="403371.0mpt" anchorSide="same"></Right>
+   <Bottom distance="0.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </DefaultPageLayout>
+</PageLayouts>

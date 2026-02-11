@@ -1,0 +1,49 @@
+<MonitoringEnvelope>
+  <Meta>
+    <SchemaVersion>3.2</SchemaVersion>
+    <GeneratedAt>2026-01-14T10:22:35+01:00</GeneratedAt>
+    <Producer>agent-berlin-01</Producer>
+  </Meta>
+
+  <EventBatch batchId="BATCH-20260114-0007">
+    <Event id="EVT-778001" severity="WARN">
+      <Timestamp>2026-01-14T10:20:11+01:00</Timestamp>
+      <Host>
+        <Name>vm-prod-12</Name>
+        <Ip>10.10.4.12</Ip>
+        <Region>eu-central-1</Region>
+      </Host>
+      <Signal>
+        <Type>Disk</Type>
+        <Metric>disk_usage_percent</Metric>
+        <Value unit="%">91.7</Value>
+        <Threshold unit="%">90</Threshold>
+      </Signal>
+      <Context>
+        <Process>node_exporter</Process>
+        <Tags>
+          <Tag key="env" value="prod"/>
+          <Tag key="team" value="platform"/>
+        </Tags>
+      </Context>
+    </Event>
+
+    <Event id="EVT-778002" severity="INFO">
+      <Timestamp>2026-01-14T10:21:04+01:00</Timestamp>
+      <Host>
+        <Name>vm-prod-12</Name>
+        <Ip>10.10.4.12</Ip>
+        <Region>eu-central-1</Region>
+      </Host>
+      <Signal>
+        <Type>Recovery</Type>
+        <Metric>disk_usage_percent</Metric>
+        <Value unit="%">88.2</Value>
+        <Threshold unit="%">90</Threshold>
+      </Signal>
+      <Context>
+        <Message>Disk usage returned below threshold.</Message>
+      </Context>
+    </Event>
+  </EventBatch>
+</MonitoringEnvelope>

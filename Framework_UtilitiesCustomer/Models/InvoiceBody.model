@@ -1,0 +1,27 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="block_verbrauchsart" multiple="true" ref="\\Framework_UtilitiesCustomer\Data\block_verbrauchsart.datamodel">
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="block_rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel"></ParamDef>
+  <ParamDef name="anschriften" ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel"></ParamDef>
+  <ParamDef name="block_verbrauchsstelle" ref="\\Framework_UtilitiesCustomer\Data\block_verbrauchsstelle.datamodel"></ParamDef>
+ </DataDefinition>
+ <Container>
+  <ContainerPartRef uri="Models\UeberschriftBeleg.model">
+   <Param name="block_rechnungsdaten">$block_rechnungsdaten</Param>
+  </ContainerPartRef>
+  <ContainerPartRef uri="Models\VerbrauchstelleZaehlpunkt.model">
+   <Param name="anschriften">$anschriften</Param>
+   <Param name="block_verbrauchsstelle">$block_verbrauchsstelle</Param>
+  </ContainerPartRef>
+  <ContainerPart>
+   <ForEach><![CDATA[$block_verbrauchsart]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <ContainerPartRef uri="Models\Verbrauchsart.model">
+    <Param name="Verbrauchsart">$block_verbrauchsart</Param>
+    <Param name="Rechnungsdaten">$block_rechnungsdaten</Param>
+   </ContainerPartRef>
+  </ContainerPart>
+ </Container>
+</ContainerPart>

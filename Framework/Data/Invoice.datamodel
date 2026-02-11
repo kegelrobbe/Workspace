@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="CrossIndustryInvoice">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="false"
+            name="ExchangedDocumentContext"
+            ref="\\Framework\Data\ExchangedDocumentContext.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false"
+            name="ExchangedDocument"
+            ref="\\Framework\Data\ExchangedDocument.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+      <Node multiple="false"
+            name="SupplyChainTradeTransaction"
+            ref="\\Framework\Data\SupplyChainTradeTransaction.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node data-type="TEXT"
+         hierarchical="FLAT"
+         multiple="false"
+         name="addAttachment"
+         searchable="false">
+      <Settings>
+         <Validation allow-empty-value="true"
+                     dialog-field=""
+                     label=""
+                     operator="ANY"
+                     validation-type="ANY_VALUE">
+            <Values/>
+         </Validation>
+         <Script>text = toXml($current.parent().CrossIndustryInvoice);
+addDocumentAttachment("/targetFormatAttachments/ZUGFeRD-invoice.xml", "&lt;" + $CrossIndustryInvoice.name() + "&gt;\n" + text + "\n&lt;/" + $CrossIndustryInvoice.name() + "&gt;");</Script>
+      </Settings>
+   </Node>
+</DataModel>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Framework\Data\BUSINESS.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true"
+            name="/BUSINESS/Invoice/CrossIndustryInvoice"
+            xpath="/rsm:CrossIndustryInvoice"/>
+   </Rules>
+   <Params/>
+   <Namespaces>
+      <Namespace prefix="udt">urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100</Namespace>
+      <Namespace prefix="rsm">urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100</Namespace>
+      <Namespace prefix="ram">urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100</Namespace>
+   </Namespaces>
+</Mapping>

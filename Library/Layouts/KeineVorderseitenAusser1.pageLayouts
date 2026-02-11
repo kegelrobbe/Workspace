@@ -1,0 +1,53 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First>
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="70866.0mpt" anchorSide="same"></Left>
+   <Top distance="279212.0mpt" anchorSide="same"></Top>
+   <Right distance="56692.0mpt" anchorSide="same"></Right>
+   <Bottom distance="1.0cm" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Adressblock">
+   <Left distance="70866.0mpt" anchorSide="same"></Left>
+   <Top distance="163558.0mpt" anchorSide="same"></Top>
+   <Right distance="297639.0mpt" anchorSide="same"></Right>
+   <Bottom distance="586773.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Infoblock">
+   <Left distance="354330.0mpt" anchorSide="same"></Left>
+   <Top distance="141732.0mpt" anchorSide="same"></Top>
+   <Right distance="2.0cm" anchorSide="same"></Right>
+   <Bottom distance="20.7cm" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Logo">
+   <Left distance="15.0cm" anchorSide="same"></Left>
+   <Top distance="1.0cm" anchorSide="same"></Top>
+   <Right distance="56694.0mpt" anchorSide="same"></Right>
+   <Bottom distance="700158.0mpt" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Markings">
+   <Left distance="0.0cm" anchorSide="same"></Left>
+   <Top distance="0.0cm" anchorSide="same"></Top>
+   <Right distance="19.0cm" anchorSide="same"></Right>
+   <Bottom distance="0.0cm" anchorSide="same"></Bottom>
+  </Region>
+  <Region name="Ruecksendezeile">
+   <Left distance="70866.0mpt" anchorSide="same"></Left>
+   <Top distance="4.5cm" anchorSide="same"></Top>
+   <Right distance="297639.0mpt" anchorSide="same"></Right>
+   <Bottom distance="678330.0mpt" anchorSide="same"></Bottom>
+  </Region>
+ </First>
+ <DefaultPageLayout>
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="2.0cm" anchorSide="same"></Left>
+   <Top distance="1.0cm" anchorSide="same"></Top>
+   <Right distance="1.0cm" anchorSide="same"></Right>
+   <Bottom distance="1.0cm" anchorSide="same"></Bottom>
+  </Region>
+ </DefaultPageLayout>
+</PageLayouts>

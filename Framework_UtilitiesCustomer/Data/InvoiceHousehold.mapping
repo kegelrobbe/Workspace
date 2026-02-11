@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Energieabrechnung\Data\InvoiceHousehold.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true"
+            name="/InvoiceHousehold/id"
+            xpath="/formular/@id"/>
+      <Rule copySubtree="true"
+            name="/InvoiceHousehold/rechnungsformular"
+            xpath="/formular/rechnungsformular"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

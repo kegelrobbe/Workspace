@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="true"
+         name="block_verbrauchsart"
+         ref="\\Framework_UtilitiesCustomer\Data\block_verbrauchsart.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

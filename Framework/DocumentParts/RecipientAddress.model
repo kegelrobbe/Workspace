@@ -1,0 +1,16 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Address" ref="\\Framework\Data\Address.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="MOMS.MOMSWebGUIAdmin" operations="EDIT,INPUT"></ModificationRight>
+   <ModificationRight role="MText.MTextUser" operations="EDIT,INPUT"></ModificationRight>
+   <ModificationRight role="MText.MTextAdmin" operations="EDIT,INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <ContainerExtensionDef id="ContentExtension_RecipientAddress"></ContainerExtensionDef>
+</ContainerPart>

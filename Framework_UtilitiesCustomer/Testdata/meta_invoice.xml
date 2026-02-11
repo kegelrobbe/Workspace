@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DocumentHeader>
+		<DocumentType>Invoice</DocumentType>
+		<DocumentDate>2013-04-30</DocumentDate>
+		<DocumentNumber>ФЕ 1093445075</DocumentNumber>
+	</DocumentHeader>
+	<Recipient>
+		<Address>
+			<Name>Стамат Филчев Кирев</Name>
+			<Street>УЛ. ДЮЛЕВО 1 ЕТ. 3 АП. 9</Street>
+			<Town>ПЛОВДИВ</Town>
+			<ZIP>4000</ZIP>
+			<Email>info@evn-trading.com</Email>
+		</Address>
+	</Recipient>
+	<Saldo_info>
+		<Amount>2.62</Amount>
+		<Currency>BGN</Currency>
+	</Saldo_info>
+	<Attachments>
+		<AttachedFile Archive="true">Name_of_pdf/a_file.pdf</AttachedFile>
+	</Attachments>
+</Document>

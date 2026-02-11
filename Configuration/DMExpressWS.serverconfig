@@ -1,0 +1,12 @@
+<configuration
+	xmlns="http://www.kwsoft.de/controlcenter/serverConfiguration"
+	name="DME server">
+	<description />
+	<mtextclient>
+		<defaults>REST</defaults>
+		<communication>
+			<Url>https://multitenant.test.omscloud.eu:443</Url>
+		</communication>
+	</mtextclient>
+</configuration>
+

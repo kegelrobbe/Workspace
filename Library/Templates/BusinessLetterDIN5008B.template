@@ -1,0 +1,117 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\DIN5008\Vorlagen\Brief.template" scriptResource="\\Framework\Scripts\LoadAll.js">
+ <DataDefinition>
+  <ParamDef name="MESSAGE" ref="\\Framework\Data\Message.datamodel" dataSourceName="DATA" dataMappingRef="\\Framework\Data\Message.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="DIN5008B"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Header</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\Header.model"></ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Markings</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\Markings.model"></ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Logo</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\Logo.model">
+     <Param name="Header">$MESSAGE.Header</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>SenderAddressLine</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\SenderAdressLine.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_SenderAddressLine">
+       <Par>
+        <Style parentName="Generic 8pt"></Style>
+        <Span>
+         <Data>$Line</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="Line">$MESSAGE.Sender.Address.SingleLine</Param>
+    </ContainerPartRef>
+    <Par>
+     <Style parentName="Generic 8pt"></Style>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>ContactDetails</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\ContactDetails.model">
+     <Param name="Date">$MESSAGE.Date</Param>
+     <Param name="ContactDetails">$MESSAGE.ContactDetails</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>RecipientAddress</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\RecipientAddress.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_RecipientAddress">
+       <ContainerPart>
+        <ForEach><![CDATA[$MESSAGE.Recipient.Address.Lines.Line]]></ForEach>
+        <DataDefinition></DataDefinition>
+        <Par>
+         <Span>
+          <Data>$Line</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+       </ContainerPart>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="Address">$MESSAGE.Recipient.Address</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <Container>
+    <ContainerPartRef id="BodyText" uri="\\Framework\DocumentParts\TextBody.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_TextBody">
+       <Par>
+        <Span>
+         <Data>$MESSAGE.SalutatoryAddress</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="MESSAGE">$MESSAGE</Param>
+    </ContainerPartRef>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Footer</RegionRef>
+    </Style>
+    <ContainerPartRef uri="\\Framework\DocumentParts\Footer.model"></ContainerPartRef>
+   </StaticContainer>
+  </Section>
+ </Document>
+</RootPart>

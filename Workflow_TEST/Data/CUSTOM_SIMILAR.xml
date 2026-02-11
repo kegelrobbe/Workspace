@@ -1,0 +1,51 @@
+<CustomerOrder>
+  <Header>
+    <OrderDate>2026-01-14</OrderDate>
+    <Channel>WEB</Channel>
+    <Currency>EUR</Currency>
+    <RequestedDeliveryDate>2026-01-20</RequestedDeliveryDate>
+  </Header>
+
+  <Customer>
+    <CustomerId>C-900123</CustomerId>
+    <LoyaltyLevel>GOLD</LoyaltyLevel>
+    <Name>
+      <FirstName>Tom</FirstName>
+      <LastName>Kolberg</LastName>
+    </Name>
+    <Contact>
+      <Email>tom.kolberg@example.com</Email>
+      <Phone>+49-30-1234567</Phone>
+    </Contact>
+    <BillingAddress>
+      <Street>Example Street 12</Street>
+      <PostalCode>10115</PostalCode>
+      <City>Berlin</City>
+      <Country>DE</Country>
+    </BillingAddress>
+  </Customer>
+
+  <Items>
+    <Item line="1">
+      <Sku>SKU-4711</Sku>
+      <Description>Cloud Backup 1TB</Description>
+      <Quantity>1</Quantity>
+      <UnitPrice>9.99</UnitPrice>
+      <TaxRate>0.19</TaxRate>
+    </Item>
+    <Item line="2">
+      <Sku>SKU-0815</Sku>
+      <Description>Support Add-on</Description>
+      <Quantity>1</Quantity>
+      <UnitPrice>19.00</UnitPrice>
+      <TaxRate>0.19</TaxRate>
+      <DiscountPercent>10</DiscountPercent>
+    </Item>
+  </Items>
+
+  <Totals>
+    <Subtotal>28.99</Subtotal>
+    <Tax>5.51</Tax>
+    <GrandTotal>34.50</GrandTotal>
+  </Totals>
+</CustomerOrder>

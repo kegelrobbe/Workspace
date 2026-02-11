@@ -1,0 +1,39 @@
+<DATA>
+	<Recipient>
+		<Address>
+			<Line1>Hans Brackhaus</Line1>
+			<Line2>Krupp Allee 17</Line2>
+			<Line3>45143 Essen</Line3>
+			<Line4>DEUTSCHLAND</Line4>
+			<SingleLine>Hans Brackhaus • Krupp Allee 17 • 45143 Essen</SingleLine>
+		</Address>
+	</Recipient>
+	<Sender>
+		<Address>
+			<Line1>Maria Mercurial</Line1>
+			<Line2>Taylorweg 42</Line2>
+			<Line3>5466 AE Veghel</Line3>
+			<Line4>NEDERLAND</Line4>
+			<SingleLine>Maria Mercurial • Taylorweg 42 • 5466 AE Veghel</SingleLine>
+		</Address>
+		<Faksimile>faksimile_mmerc.png</Faksimile>
+		<FaksimileLabel>Maria Mercurial</FaksimileLabel>
+	</Sender>
+	<SalutatoryAddress>Geachte heer Brackhaus</SalutatoryAddress>
+	<ComplimentaryClose>Hartelijke groeten</ComplimentaryClose>
+	<Subject>
+		<Line>meeting minutes</Line>
+	</Subject>
+	<Date>Utrecht, 24.05.2025</Date>
+	<ContactDetails>
+		<Line></Line>
+		<Line>Maria Mercurial</Line>
+		<Line></Line>
+		<Line>maria@mercurial.sk</Line>
+		<Line>+421 815 4711</Line>
+		<Line></Line>
+	</ContactDetails>
+	<Header>
+		<GraphicName>logo.png</GraphicName>
+	</Header>
+</DATA>

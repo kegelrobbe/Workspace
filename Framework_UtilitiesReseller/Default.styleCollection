@@ -1,0 +1,39 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+<SectionStyle name="DIN5008A" title="DIN5008A" title-en_US="DIN5008A" title-de_DE="DIN5008A">
+  <ContainerStyle name="Subject">
+   <ParStyle name="Subject1" title="Subject (main)" title-en_US="Subject (main)" title-de_DE="Betreff 1. Zeile">
+    <SpanStyle>
+     <FontStyle>bold</FontStyle>
+    </SpanStyle>
+    <Role>H</Role>
+    <NextStyle>Subject2</NextStyle>
+   </ParStyle>
+   <ParStyle name="Subject2" title="Subject (2nd line)" title-en_US="Subject (2nd line)" title-de_DE="Betreff 2. Zeile"></ParStyle>
+   <ParStyle>
+    <Role>P</Role>
+    <SpaceAfter>0.0cm</SpaceAfter>
+   </ParStyle>
+   <SpaceAfter>0.44cm</SpaceAfter>
+  </ContainerStyle>
+  <ContainerStyle name="SalutatoryAddress">
+   <ParStyle>
+    <NextCaseCorrection>lower</NextCaseCorrection>
+   </ParStyle>
+   <SpaceAfter>0.44cm</SpaceAfter>
+  </ContainerStyle>
+  <ContainerStyle name="Body">
+   <ParStyle>
+    <SpaceAfter>0.44cm</SpaceAfter>
+   </ParStyle>
+   <NumberingStyle parentName="ItemizedList"></NumberingStyle>
+  </ContainerStyle>
+  <ContainerStyle>
+   <ParStyle>
+    <SpanStyle>
+     <!-- Define default styles for Letter content here --></SpanStyle>
+   </ParStyle>
+  </ContainerStyle>
+  <ResponsiveLayoutRef uri="\library\Framework_UtilitiesReseller\Layouts\MarginalspalteDIN5008A.responsiveLayout"></ResponsiveLayoutRef>
+  <PageLayouts parentRef="\library\Framework_UtilitiesReseller\Layouts\MarginalspalteDIN5008A.pageLayouts"></PageLayouts>
+ </SectionStyle>
+</StyleCollection>

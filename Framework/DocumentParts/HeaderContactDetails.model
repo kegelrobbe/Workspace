@@ -1,0 +1,6 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ContactDetails" ref="\\Framework\Data\ContactDetails.datamodel"></ParamDef>
+ </DataDefinition>
+ <ContainerExtensionDef id="ContentExtension_HeaderContactDetails"></ContainerExtensionDef>
+</ContainerPart>

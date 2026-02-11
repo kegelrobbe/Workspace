@@ -1,0 +1,10 @@
+%/Partner/City/__VALIDATION_ERROR_MESSAGE__=Bitte geben Sie den Ort ein
+%/Partner/City/__VALIDATION_LABEL__=Ort
+%/Partner/Firstname/__VALIDATION_LABEL__=Vorname
+%/Partner/Lastname/__VALIDATION_ERROR_MESSAGE__=Bitte geben Sie den Nachnamen ein
+%/Partner/Lastname/__VALIDATION_LABEL__=Nachname
+%/Partner/Salutation/__VALIDATION_LABEL__=Anrede
+%/Partner/Street/__VALIDATION_LABEL__=Strasse
+%/Partner/Title/__VALIDATION_LABEL__=Titel
+%/Partner/Zip/__VALIDATION_ERROR_MESSAGE__=Bitte geben Sie die Postleitzahl ein
+%/Partner/Zip/__VALIDATION_LABEL__=Postleitzahl

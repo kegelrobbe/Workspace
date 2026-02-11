@@ -1,0 +1,408 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="IncludedSupplyChainTradeLineItem" multiple="true" ref="\\Framework\Data\IncludedSupplyChainTradeLineItem.datamodel">
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <Table>
+  <Headers>
+   <Header>
+    <Row>
+     <Cell>
+      <ColSpan><![CDATA[6]]></ColSpan>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Invoice Items</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>#</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Item</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Quantity</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Net-Price</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>VAT Rate</Text>
+        </Span>
+        <Span>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>Net-Total</Text>
+        </Span>
+        <Span>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Header>
+  </Headers>
+  <Columns>
+   <Column>
+    <Style>
+     <ColumnWidth>38846.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>2.0cm</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>2.5cm</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>2.5cm</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>2.5cm</ColumnWidth>
+    </Style>
+   </Column>
+  </Columns>
+  <Style parentName="RibbonsLightDense"></Style>
+  <TablePart>
+   <ForEach><![CDATA[$IncludedSupplyChainTradeLineItem]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <TablePart>
+    <VisibleIf><![CDATA[$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.SpecifiedTradeSettlementLineMonetarySummation.LineTotalAmount.value.valueOf() != 0]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Data>$IncludedSupplyChainTradeLineItem.AssociatedDocumentLineDocument.LineID</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Data>$IncludedSupplyChainTradeLineItem.SpecifiedTradeProduct.Name</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <ParPartRef uri="\\Framework\Models\FormattedDate.model">
+         <Param name="DateTimeString">$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.BillingSpecifiedPeriod.StartDateTime.DateTimeString.value</Param>
+         <Param name="DateTimeFormat">$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.BillingSpecifiedPeriod.StartDateTime.DateTimeString.format</Param>
+        </ParPartRef>
+        <Span>
+         <Text> - </Text>
+        </Span>
+        <ParPartRef uri="\\Framework\Models\FormattedDate.model">
+         <Param name="DateTimeString">$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.BillingSpecifiedPeriod.StartDateTime.DateTimeString.value</Param>
+         <Param name="DateTimeFormat">$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.BillingSpecifiedPeriod.EndDateTime.DateTimeString.format</Param>
+        </ParPartRef>
+       </Par>
+       <ContainerPart>
+        <VisibleIf><![CDATA[$IncludedSupplyChainTradeLineItem.SpecifiedTradeProduct.SellerAssignedID.notEmpty()]]></VisibleIf>
+        <DataDefinition></DataDefinition>
+        <Par>
+         <Style parentName="Generic 10pt"></Style>
+         <Span>
+          <Text>Seller Assigned ID: </Text>
+          <Data>$IncludedSupplyChainTradeLineItem.SpecifiedTradeProduct.SellerAssignedID</Data>
+         </Span>
+        </Par>
+       </ContainerPart>
+       <ContainerPart>
+        <VisibleIf><![CDATA[$IncludedSupplyChainTradeLineItem.SpecifiedTradeProduct.BuyerAssignedID.notEmpty()]]></VisibleIf>
+        <DataDefinition></DataDefinition>
+        <Par>
+         <Style parentName="Generic 10pt"></Style>
+         <Span>
+          <Text>Buyer Assigned ID: </Text>
+          <Data>$IncludedSupplyChainTradeLineItem.SpecifiedTradeProduct.BuyerAssignedID</Data>
+         </Span>
+        </Par>
+       </ContainerPart>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Data>$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeDelivery.BilledQuantity.value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <ParPartRef uri="Models\InvoiceUnitCode.model">
+         <Param name="unitCode">$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeDelivery.BilledQuantity.unitCode</Param>
+        </ParPartRef>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Data>$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeAgreement.NetPriceProductTradePrice.ChargeAmount.value</Data>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Data>$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.ApplicableTradeTax.RateApplicablePercent</Data>
+        </Span>
+       </Par>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>%</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Data>$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.SpecifiedTradeSettlementLineMonetarySummation.LineTotalAmount.value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </TablePart>
+   <TablePart>
+    <VisibleIf><![CDATA[$IncludedSupplyChainTradeLineItem.AssociatedDocumentLineDocument.IncludedNote.Content]]></VisibleIf>
+    <DataDefinition></DataDefinition>
+    <TablePart>
+     <VisibleIf><![CDATA[$IncludedSupplyChainTradeLineItem.AssociatedDocumentLineDocument.IncludedNote.Content]]></VisibleIf>
+     <DataDefinition></DataDefinition>
+     <Row>
+      <Cell>
+       <Container>
+        <Par>
+         <Style parentName="Generic 10pt">
+          <FirstIndent>0.2cm</FirstIndent>
+         </Style>
+         <Span>
+          <Text></Text>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+      <Cell>
+       <ColSpan><![CDATA[5]]></ColSpan>
+       <Container>
+        <Par>
+         <Style parentName="Generic 10pt">
+          <FirstIndent>0.0cm</FirstIndent>
+         </Style>
+         <Span>
+          <Data>$IncludedSupplyChainTradeLineItem.AssociatedDocumentLineDocument.IncludedNote.Content</Data>
+          <Text></Text>
+         </Span>
+        </Par>
+        <ContainerPart>
+         <ForEach><![CDATA[$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeSettlement.SpecifiedTradeAllowanceCharge]]></ForEach>
+         <DataDefinition></DataDefinition>
+         <ContainerPart>
+          <VisibleIf><![CDATA[$SpecifiedTradeAllowanceCharge.ChargeIndicator.Indicator.valueOf() == true]]></VisibleIf>
+          <DataDefinition></DataDefinition>
+          <Par>
+           <Style parentName="Generic 10pt">
+            <FirstIndent>0.2cm</FirstIndent>
+           </Style>
+           <Span>
+            <Text>includes charge:</Text>
+           </Span>
+          </Par>
+         </ContainerPart>
+         <ContainerPart>
+          <VisibleIf><![CDATA[$SpecifiedTradeAllowanceCharge.ChargeIndicator.Indicator.valueOf() != true]]></VisibleIf>
+          <DataDefinition></DataDefinition>
+          <Par>
+           <Style parentName="Generic 10pt">
+            <FirstIndent>0.0cm</FirstIndent>
+           </Style>
+           <Span>
+            <Text>included allowance:</Text>
+           </Span>
+          </Par>
+         </ContainerPart>
+         <Par>
+          <Style parentName="Generic 10pt">
+           <LeftIndent>1.2cm</LeftIndent>
+           <FirstIndent>0.2cm</FirstIndent>
+           <LineSpacing type="fixed" value="12.5pt"></LineSpacing>
+          </Style>
+          <Span>
+           <Data>$SpecifiedTradeAllowanceCharge.Reason</Data>
+          </Span>
+          <ParPart>
+           <VisibleIf><![CDATA[$SpecifiedTradeAllowanceCharge.ChargeIndicator.Indicator.valueOf() != true]]></VisibleIf>
+           <DataDefinition></DataDefinition>
+           <Span>
+            <Text>: -</Text>
+           </Span>
+          </ParPart>
+          <ParPart>
+           <VisibleIf><![CDATA[$SpecifiedTradeAllowanceCharge.ChargeIndicator.Indicator.valueOf() == true]]></VisibleIf>
+           <DataDefinition></DataDefinition>
+           <Span>
+            <Text>: </Text>
+           </Span>
+          </ParPart>
+          <Span>
+           <Data>$SpecifiedTradeAllowanceCharge.ActualAmount.value</Data>
+          </Span>
+         </Par>
+         <Par>
+          <Style parentName="Generic 10pt">
+           <LeftIndent>1.2cm</LeftIndent>
+           <FirstIndent>0.2cm</FirstIndent>
+           <Tabs>
+            <Tab position="1.2cm" tabType="left" underlineStyle="default"></Tab>
+            <Tab position="2.4cm" tabType="left" underlineStyle="default"></Tab>
+           </Tabs>
+          </Style>
+          <ParPart>
+           <VisibleIf><![CDATA[$SpecifiedTradeAllowanceCharge.CalculationPercent.notEmpty()]]></VisibleIf>
+           <DataDefinition></DataDefinition>
+           <Span>
+            <Data>$SpecifiedTradeAllowanceCharge.CalculationPercent</Data>
+            <Text>% of </Text>
+           </Span>
+          </ParPart>
+          <Span>
+           <Data>$SpecifiedTradeAllowanceCharge.BasisAmount.value</Data>
+          </Span>
+         </Par>
+        </ContainerPart>
+        <Par>
+         <Style parentName="Generic 10pt">
+          <FirstIndent>0.0cm</FirstIndent>
+         </Style>
+         <Span>
+          <Text>Gross Price Product Trade Price: </Text>
+          <Data>$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeAgreement.GrossPriceProductTradePrice.ChargeAmount.value</Data>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="Generic 10pt">
+          <FirstIndent>0.0cm</FirstIndent>
+         </Style>
+         <Span>
+          <Text>Origin Trade Country: </Text>
+          <Data>$IncludedSupplyChainTradeLineItem.SpecifiedTradeProduct.OriginTradeCountry.ID</Data>
+         </Span>
+        </Par>
+        <Par>
+         <Style parentName="Generic 10pt">
+          <FirstIndent>0.0cm</FirstIndent>
+         </Style>
+         <Span>
+          <Text>Issuer Assigned ID: </Text>
+          <Data>$IncludedSupplyChainTradeLineItem.SpecifiedLineTradeAgreement.BuyerOrderReferencedDocument.IssuerAssignedID</Data>
+         </Span>
+        </Par>
+       </Container>
+      </Cell>
+     </Row>
+    </TablePart>
+   </TablePart>
+  </TablePart>
+ </Table>
+</ContainerPart>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="true"
+         name="IncludedSupplyChainTradeLineItem"
+         ref="\\Framework\Data\IncludedSupplyChainTradeLineItem.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="ApplicableHeaderTradeAgreement"
+         ref="\\Framework\Data\ApplicableHeaderTradeAgreement.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="ApplicableHeaderTradeDelivery"
+         ref="\\Framework\Data\ApplicableHeaderTradeDelivery.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+   <Node multiple="false"
+         name="ApplicableHeaderTradeSettlement"
+         ref="\\Framework\Data\ApplicableHeaderTradeSettlement.datamodel">
+      <Settings>
+         <Script/>
+      </Settings>
+   </Node>
+</DataModel>

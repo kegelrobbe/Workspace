@@ -1,0 +1,146 @@
+<DATA>
+	<Recipient>
+		<Address>
+			<Line1>Muster GmbH</Line1>
+			<Line2>Musterweg 4</Line2>
+			<Line3/>
+			<Line4/>
+			<Line5>DE 11111 X</Line5>
+			<Line6/>
+			<SingleLine>Muster GmbH • Musterweg 4   • DE 11111 X</SingleLine>
+		</Address>
+	</Recipient>
+	<Sender>
+		<Address>
+			<Line1>Muster GmbH</Line1>
+			<Line2>Steinstr. 101</Line2>
+			<Line3/>
+			<Line4/>
+			<Line5>14480 X</Line5>
+			<Line6/>
+			<SingleLine>Muster GmbH • Steinstr. 101   • DE 14480 X</SingleLine>
+		</Address>
+		<Faksimile/>
+		<FaksimileLabel/>
+		<FaksimileFilename/>
+	</Sender>
+	<SalutatoryAddress>
+		<Line>Geachte heer Brackhaus</Line>
+		<Line>additional line</Line>
+		<Line />
+		<GraphicLabel />
+		<GraphicBase64 />
+		<GraphicName />
+	</SalutatoryAddress>
+	<ComplimentaryClose>
+		<Line>Hartelijke groeten</Line>
+		<Line>yet another not empty dummy line</Line>
+		<Line />
+		<GraphicLabel />
+		<GraphicBase64 />
+		<GraphicName />
+	</ComplimentaryClose>
+	<Subject>
+		<Line>meeting minutes</Line>
+		<Line>maybe sometimes multiple subject lines are needed</Line>
+	</Subject>
+	<Date>20251201</Date>
+	<ContactDetails>
+		<Line></Line>
+		<Line></Line>
+		<Line></Line>
+		<Line></Line>
+		<Line></Line>
+		<Line></Line>
+	</ContactDetails>
+	<Header>
+		<Line>some text which might appear in the header part of the document</Line>
+		<Line>more header text lines</Line>
+		<Line />
+		<GraphicLabel />
+		<GraphicBase64 />
+		<GraphicName>logo.png</GraphicName>
+	</Header>
+	<Footer>
+		<Line>footers also might contain text</Line>
+		<Line>sometimes footers contain more than one line of text</Line>
+		<Line />
+		<GraphicLabel />
+		<GraphicBase64 />
+		<GraphicName />
+	</Footer>
+	<OutputControls>
+		<SFTP>
+			<CertStore />
+			<Endpoint />
+		</SFTP>
+		<EMail>
+			<To />
+			<From />
+			<Subject />
+			<AsAttachment />
+		</EMail>
+		<Messaging>
+			<Type />
+			<To />
+			<GatewayParams>GatewayParams</GatewayParams>
+			<GatewayParams />
+		</Messaging>
+		<BulkMail>
+			<GatewayParams>GatewayParams</GatewayParams>
+			<GatewayParams />
+			<EMail>
+				<To />
+				<From />
+				<Subject />
+				<AsAttachment />
+			</EMail>
+		</BulkMail>
+		<SMTP>
+			<Server />
+			<Port />
+			<CertStore />
+			<EMail>
+				<To />
+				<From />
+				<Subject />
+				<AsAttachment />
+			</EMail>
+		</SMTP>
+		<PrintedLetter>
+			<GatewayParams>GatewayParams</GatewayParams>
+			<GatewayParams />
+		</PrintedLetter>
+		<DVelopPostbox>
+			<GatewayParams>GatewayParams</GatewayParams>
+			<GatewayParams />
+		</DVelopPostbox>
+		<Archiv>
+			<GatewayParams>GatewayParams</GatewayParams>
+			<GatewayParams />
+		</Archiv>
+		<CloudStorage>
+			<Endpoint />
+			<Token />
+			<GatewayParams>GatewayParams</GatewayParams>
+			<GatewayParams />
+		</CloudStorage>
+		<Kafka>
+			<Instance />
+			<Topic />
+			<Token />
+		</Kafka>
+		<RestAPI>
+			<Endpoint />
+			<Function />
+			<APIToken />
+		</RestAPI>
+		<ControlConfiguration>
+			<ScheduledPrintDate>
+				<MinDate />
+				<MaxDate />
+				<FixedDate />
+			</ScheduledPrintDate>
+		</ControlConfiguration>
+	</OutputControls>
+</DATA>

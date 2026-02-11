@@ -1,0 +1,4 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition></DataDefinition>
+ <ContainerExtensionDef id="ContentExtension_Footer"></ContainerExtensionDef>
+</ContainerPart>

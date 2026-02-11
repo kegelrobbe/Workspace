@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<formular id="743763">
+
+<!--RE_2_XML  Ïå÷àò íà ôàêòóðà îðèãèíàë                         KVASY                         -->
+  <rechnungsformular>
+    <start>
+        <erstellung_start_datum>18.10.2013</erstellung_start_datum>
+        <erstellung_start_uhr>16:47</erstellung_start_uhr>
+        <aufruf_von>L_RE_SE</aufruf_von>
+        <name_des_reports>RE_2_XML</name_des_reports>
+        <name_des_datenstroms>RE_2_DATENSTROM</name_des_datenstroms>
+        <name_variante_des_datenstroms>RE_2_DATENSTROM</name_variante_des_datenstroms>
+        <name_nutzer>SIV</name_nutzer>
+        <name_terminal>SCRMNG01</name_terminal>
+        <name_schema>KVASY</name_schema>
+        <para_pk>1507693</para_pk>
+        <name_datenbank>PROD</name_datenbank>
+        <name_xml_kommentar>XXX</name_xml_kommentar>
+        <name_freigabe_zum_loeschen>XXX</name_freigabe_zum_loeschen>
+    </start>
+    <block_steuerung_des_druckes>
+      <block_selektionskriterium id="1">
+          <kriterium_bezeichnung>Formatvorschrift</kriterium_bezeichnung>
+          <kriterium_wert>Ïå÷àò íà ôàêòóðà îðèãèíàë</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="2">
+          <kriterium_bezeichnung>Rechnungen</kriterium_bezeichnung>
+          <kriterium_wert>gebuchte</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="3">
+          <kriterium_bezeichnung>Rechnunglauf</kriterium_bezeichnung>
+          <kriterium_wert>1010205751 08/13</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="4">
+          <kriterium_bezeichnung>Rechnungsnummer Teil1</kriterium_bezeichnung>
+          <kriterium_wert>ÔÅ</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="5">
+          <kriterium_bezeichnung>Rechnungsnummer von</kriterium_bezeichnung>
+          <kriterium_wert>1101632445</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="6">
+          <kriterium_bezeichnung>Rechnungsnummer bis</kriterium_bezeichnung>
+          <kriterium_wert>1101632445</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="7">
+          <kriterium_bezeichnung>Zahlungsart</kriterium_bezeichnung>
+          <kriterium_wert>Â áðîé íà åë. êàñà</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="8">
+          <kriterium_bezeichnung>Rechnungstext 1</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="9">
+          <kriterium_bezeichnung>Rechnungstext 2</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="10">
+          <kriterium_bezeichnung>Sortierung nach</kriterium_bezeichnung>
+          <kriterium_wert>Rechnungsnummer</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="11">
+          <kriterium_bezeichnung>OP-Betrag von</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="12">
+          <kriterium_bezeichnung>OP-Betrag bis</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="13">
+          <kriterium_bezeichnung>Zahlbetrag von</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="14">
+          <kriterium_bezeichnung>Zahlbetrag bis</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="15">
+          <kriterium_bezeichnung>Lastschriftkunde</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="16">
+          <kriterium_bezeichnung>Ablesegebiet</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="17">
+          <kriterium_bezeichnung>Kunde von</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="18">
+          <kriterium_bezeichnung>Kunde bis</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="19">
+          <kriterium_bezeichnung>Juristische Person</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="20">
+          <kriterium_bezeichnung>Schnittstellensammlung</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="21">
+          <kriterium_bezeichnung>ABSCHLAEGE</kriterium_bezeichnung>
+          <kriterium_wert>A</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="22">
+          <kriterium_bezeichnung>Verbrauchsstellenbezeichnung</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="23">
+          <kriterium_bezeichnung>Kommunikationsart</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="24">
+          <kriterium_bezeichnung>Ortsname</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="25">
+          <kriterium_bezeichnung>XML_FREIGABE_ZUM_LOESCHEN</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="26">
+          <kriterium_bezeichnung>XML_KOMMENTAR</kriterium_bezeichnung>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="27">
+          <kriterium_bezeichnung>Sprache</kriterium_bezeichnung>
+          <kriterium_wert>D</kriterium_wert>
+      </block_selektionskriterium>
+      <block_selektionskriterium id="28">
+          <kriterium_bezeichnung>Report</kriterium_bezeichnung>
+          <kriterium_wert>re_2_xml</kriterium_wert>
+      </block_selektionskriterium>
+        <steuerung_bezeichnung>Ïå÷àò íà ôàêòóðà îðèãèíàë</steuerung_bezeichnung>
+        <ausgabename>RE_2_XML_2013_10_18__16_47</ausgabename>
+      <drucksteuerung>
+          <objectinfo>RevisionsNr=1.28 zuletzt geandert am 15.01.2013 Variante= Sortierung=</objectinfo>
+          <ueberschrift1>Line1</ueberschrift1>
+          <ueberschrift2>Line2</ueberschrift2>
+          <herkunft_betr_anschrift>B</herkunft_betr_anschrift>
+          <format_betr_anschrift>S</format_betr_anschrift>
+          <ausgabe_betr_anschrift_j_n>J</ausgabe_betr_anschrift_j_n>
+          <ausgabe_betr_logo_j_n>N</ausgabe_betr_logo_j_n>
+          <ausgabe_liegenschaft_j_n>N</ausgabe_liegenschaft_j_n>
+          <rf_ausgabe_fakt_abschlaege_j_n>J</rf_ausgabe_fakt_abschlaege_j_n>
+          <rf_ausgabe_neue_abschlaege_j_n>J</rf_ausgabe_neue_abschlaege_j_n>
+          <format_uwt>KEINE</format_uwt>
+          <ausgabe_uwt_waehrung_j_n>J</ausgabe_uwt_waehrung_j_n>
+          <druck_spalte1>VA ID</druck_spalte1>
+          <druck_spalte2>   Für die Zeit</druck_spalte2>
+          <druck_spalte4>Zähler-Nr.</druck_spalte4>
+          <druck_spalte5>AA</druck_spalte5>
+          <druck_spalte6>         Zählerstand</druck_spalte6>
+          <druck_spalte7>Verbrauchsart</druck_spalte7>
+          <druck_spalte8>Diff.</druck_spalte8>
+          <druck_spalte9>Mult.</druck_spalte9>
+          <druck_spalte10>Lieferung</druck_spalte10>
+          <druck_spalte11>Arb. Preis</druck_spalte11>
+          <druck_spalte12>Betrag Arb.Preis</druck_spalte12>
+          <druck_spalte13>Grundpreis</druck_spalte13>
+          <druck_spalte14>KZ</druck_spalte14>
+          <druck_spalte15>Nettobetrag</druck_spalte15>
+          <druck_spalte16>Netto</druck_spalte16>
+          <druck_spalte17>Umsatzsteuer</druck_spalte17>
+          <druck_spalte18>USt.</druck_spalte18>
+          <druck_spalte19>Brutto</druck_spalte19>
+          <druck_spalte20>Bruttobetrag</druck_spalte20>
+          <druck_spalte21>Bezahlte Abschläge:</druck_spalte21>
+          <druck_spalte23>Belegnummer</druck_spalte23>
+          <druck_spalte24>Datum</druck_spalte24>
+          <rf_si_modell>FABSI</rf_si_modell>
+      </drucksteuerung>
+    </block_steuerung_des_druckes>
+    <block_rechnungen>
+      <block_rechnung id="1">
+        <block_rechnungsdaten>
+            <stamm_abbuchung_j_n>N</stamm_abbuchung_j_n>
+            <stamm_erstellungswaehrung>BGN</stamm_erstellungswaehrung>
+            <stamm_rechnung_bis>02.08.2013</stamm_rechnung_bis>
+            <stamm_rechnung_objektschlussel>2798102</stamm_rechnung_objektschlussel>
+            <stamm_rechnung_von>11.07.2013</stamm_rechnung_von>
+            <stamm_rechnungsart>Verbrauchsabrechnung</stamm_rechnungsart>
+            <stamm_rechnungsdatum>14.10.2013</stamm_rechnungsdatum>
+            <stamm_rechnungs_pk>277766680</stamm_rechnungs_pk>
+            <stamm_rechnungsnummer>ÔÅ 1101632445</stamm_rechnungsnummer>
+            <stamm_rechnungsnummer_teil1>ÔÅ</stamm_rechnungsnummer_teil1>
+            <stamm_rechnungsnummer_teil2>1101632445</stamm_rechnungsnummer_teil2>
+            <stamm_storniert_j_n>N</stamm_storniert_j_n>
+            <stamm_zahlungsart_bezeichnung>Â áðîé íà åë. êàñà</stamm_zahlungsart_bezeichnung>
+            <stamm_zweite_waehrung>EUR</stamm_zweite_waehrung>
+            <stamm_bank_konto_einzahl>0000503001</stamm_bank_konto_einzahl>
+            <stamm_bank_blz_einzahl>99503001</stamm_bank_blz_einzahl>
+            <stamm_bank_name_einzahl>503001</stamm_bank_name_einzahl>
+            <stamm_rechnung_op_kennung>0002389164532</stamm_rechnung_op_kennung>
+            <stamm_lieferantenwechsel_j_n>N</stamm_lieferantenwechsel_j_n>
+            <stamm_mita_kuerzel>KKB024</stamm_mita_kuerzel>
+            <stamm_mita_name>ÖÎÉÊÎÂÀ, ÅÊÀÒÅÐÈÍÀ</stamm_mita_name>
+            <stamm_mita_vorname>0939</stamm_mita_vorname>
+            <stamm_mita_nummer>1054_034363</stamm_mita_nummer>
+        </block_rechnungsdaten>
+        <block_kundendaten id="1">
+            <kunde_kundennummer>1010205751</kunde_kundennummer>
+            <kunde_name1>ØÅÍÒÎÂÀ</kunde_name1>
+            <kunde_name2>ÖÂÅÒÅËÈÍÀ ÑÒÎßÍÎÂÀ</kunde_name2>
+            <kunde_aktennummer>6810286798</kunde_aktennummer>
+            <kunde_kundenart>áèòîâè êëèåíòè Haushaltskunden</kunde_kundenart>
+            <kunde_aktiv_ab>05.09.2011</kunde_aktiv_ab>
+            <kunde_pk>1740232</kunde_pk>
+            <kunde_sonderfunktion>keine Sonderfunktion</kunde_sonderfunktion>
+            <kunde_sonderfunktion_wert>N</kunde_sonderfunktion_wert>
+            <kunde_variante>RECHNUNG_RE2</kunde_variante>
+            <kunde_lastschrift_j_n>N</kunde_lastschrift_j_n>
+            <kunde_jvl_j_n>N</kunde_jvl_j_n>
+            <kunde_abw_rech_aktennummer>6810286798</kunde_abw_rech_aktennummer>
+          <anschriften id="1">
+              <objectinfo>RevisionsNr=1.45 zuletzt geandert am 19.11.2012 Variante=ANSCHRIFT_LEISTEMPF Sortierung=</objectinfo>
+              <an_sort>1</an_sort>
+              <an_variante>ANSCHRIFT_LEISTEMPF</an_variante>
+              <an_name1>ØÅÍÒÎÂÀ</an_name1>
+              <an_name2>ÖÂÅÒÅËÈÍÀ</an_name2>
+              <an_name3>ÑÒÎßÍÎÂÀ</an_name3>
+              <an_lkz>BG</an_lkz>
+              <an_plz>1510</an_plz>
+              <an_ort>ÃÐ. ÑÎÔÈß</an_ort>
+              <an_strasse>ÓË. ÓÎØÁÚÐÍ</an_strasse>
+              <an_hausnummer>32</an_hausnummer>
+              <an_zusatzhausnummer>ÂÕ. À ÀÏ.13</an_zusatzhausnummer>
+              <an_telefon>0888152608</an_telefon>
+              <an_rechnungsaktive_anschr_j_n>J</an_rechnungsaktive_anschr_j_n>
+          </anschriften>
+        </block_kundendaten>
+        <block_anschriften>
+          <block_anschriften_rechempf>
+            <anschriften id="1">
+                <an_sort>1</an_sort>
+                <an_variante>ANSCHRIFT_KUNDE</an_variante>
+                <an_name1>ØÅÍÒÎÂÀ</an_name1>
+                <an_name2>ÖÂÅÒÅËÈÍÀ</an_name2>
+                <an_name3>ÑÒÎßÍÎÂÀ</an_name3>
+                <an_lkz>BG</an_lkz>
+                <an_plz>1510</an_plz>
+                <an_ort>ÃÐ. ÑÎÔÈß</an_ort>
+                <an_strasse>ÓË. ÓÎØÁÚÐÍ</an_strasse>
+                <an_hausnummer>32</an_hausnummer>
+                <an_zusatzhausnummer>ÂÕ. À ÀÏ.13</an_zusatzhausnummer>
+                <an_telefon>0888152608</an_telefon>
+                <an_rechnungsaktive_anschr_j_n>J</an_rechnungsaktive_anschr_j_n>
+                <an_adresse>ÓË. ÓÎØÁÚÐÍ 32 ÂÕ. À ÀÏ.13</an_adresse>
+                <an_art_s_e>E</an_art_s_e>
+              <an_aa_bezeichnung id="1">
+çà ïîëó÷. íà ôàêòóðà rechn.akt
+              </an_aa_bezeichnung>
+              <block_kommunikation id="1">
+                  <kom_zeichenfolge>0888152608</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>òåëåôîí Telefon</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>TELEFON</kom_ka_kategorie>
+                  <kom_gesperrt>N</kom_gesperrt>
+              </block_kommunikation>
+            </anschriften>
+          </block_anschriften_rechempf>
+          <block_anschriften_vbrst>
+            <anschriften id="1">
+                <an_sort>1</an_sort>
+                <an_variante>ANSCHRIFT_HAUSANSCHLUSS</an_variante>
+                <an_name1>ØÅÍÒÎÂÀ</an_name1>
+                <an_name2>ÖÂÅÒÅËÈÍÀ</an_name2>
+                <an_name3>ÑÒÎßÍÎÂÀ</an_name3>
+                <an_lkz>BG</an_lkz>
+                <an_plz>8240</an_plz>
+                <an_ort>ÃÐ. ÑËÚÍ×ÅÂ ÁÐßÃ</an_ort>
+                <an_strasse>ÕÎÒÅË ÊÀÐËÎÂÎ</an_strasse>
+                <an_hausnummer>0</an_hausnummer>
+                <an_zusatzhausnummer>ÀÒ.5</an_zusatzhausnummer>
+                <an_wohnungsnummer>ÀÏ.5</an_wohnungsnummer>
+                <an_e_mail></an_e_mail>
+                <an_rechnungsaktive_anschr_j_n>N</an_rechnungsaktive_anschr_j_n>
+                <an_adresse>ÕÎÒÅË ÊÀÐËÎÂÎ 0 ÀÒ.5</an_adresse>
+                <an_art_s_e>E</an_art_s_e>
+              <block_kommunikation id="1">
+                  <kom_zeichenfolge>mitko_shentov@yahoo.com</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>info e-mail</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>INFORECHNUNGSEMAIL</kom_ka_kategorie>
+                  <kom_gesperrt>N</kom_gesperrt>
+              </block_kommunikation>
+              <block_kommunikation id="2">
+                  <kom_zeichenfolge>359888152608</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>SMS èçâåñòÿâàíå çà ïðåêúñâàíå</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>SONSTIGES</kom_ka_kategorie>
+                  <kom_gesperrt>N</kom_gesperrt>
+              </block_kommunikation>
+            </anschriften>
+          </block_anschriften_vbrst>
+          <block_anschriften_rk>
+            <anschriften id="1">
+                <an_nummer>3699162</an_nummer>
+                <an_sort>1</an_sort>
+                <an_variante>ANSCHRIFT_KOMMUVERSAND</an_variante>
+                <an_name1>ØÅÍÒÎÂÀ</an_name1>
+                <an_name2>ÖÂÅÒÅËÈÍÀ</an_name2>
+                <an_name3>ÑÒÎßÍÎÂÀ</an_name3>
+                <an_lkz>BG</an_lkz>
+                <an_plz>8240</an_plz>
+                <an_ort>ÃÐ. ÑËÚÍ×ÅÂ ÁÐßÃ</an_ort>
+                <an_strasse>ÕÎÒÅË ÊÀÐËÎÂÎ</an_strasse>
+                <an_hausnummer>0</an_hausnummer>
+                <an_zusatzhausnummer>ÀÒ.5</an_zusatzhausnummer>
+                <an_wohnungsnummer>ÀÏ.5</an_wohnungsnummer>
+                <an_rechnungsaktive_anschr_j_n>N</an_rechnungsaktive_anschr_j_n>
+                <an_adresse>ÕÎÒÅË ÊÀÐËÎÂÎ 0 ÀÒ.5</an_adresse>
+                <an_art_s_e>E</an_art_s_e>
+              <block_kommunikation id="1">
+                  <kom_zeichenfolge>mitko_shentov@yahoo.com</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>info e-mail</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>INFORECHNUNGSEMAIL</kom_ka_kategorie>
+                  <kom_gesperrt>N</kom_gesperrt>
+              </block_kommunikation>
+              <block_kommunikation id="2">
+                  <kom_zeichenfolge>359888152608</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>SMS èçâåñòÿâàíå çà ïðåêúñâàíå</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>SONSTIGES</kom_ka_kategorie>
+                  <kom_gesperrt>N</kom_gesperrt>
+              </block_kommunikation>
+              <block_kommu_versand id="1">
+                  <kom_zeichenfolge>359888152608</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>SMS èçâåñòÿâàíå çà ïðåêúñâàíå</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>SONSTIGES</kom_ka_kategorie>
+                  <kom_von>05.10.2013</kom_von>
+                  <kom_re_versand_j_n>N</kom_re_versand_j_n>
+              </block_kommu_versand>
+              <block_kommu_versand id="2">
+                  <kom_zeichenfolge>mitko_shentov@yahoo.com</kom_zeichenfolge>
+                  <kom_ka_bezeichnung>info e-mail</kom_ka_bezeichnung>
+                  <kom_ka_kategorie>INFORECHNUNGSEMAIL</kom_ka_kategorie>
+                  <kom_von>01.10.2013</kom_von>
+                  <kom_re_versand_j_n>N</kom_re_versand_j_n>
+              </block_kommu_versand>
+            </anschriften>
+          </block_anschriften_rk>
+          <block_anschriften_sv>
+          </block_anschriften_sv>
+        </block_anschriften>
+        <block_verbrauchsstelle>
+            <vbrst_objektschluessel>2798102</vbrst_objektschluessel>
+            <vbrst_hausnummer>0</vbrst_hausnummer>
+            <vbrst_zusatzhausnummer>.</vbrst_zusatzhausnummer>
+            <vbrst_wohnungsnummer>5</vbrst_wohnungsnummer>
+            <vbrst_bezeichnung>ÀÏÀÐÒÀÌÅÍÒ</vbrst_bezeichnung>
+            <vbrst_kommentar>38102025</vbrst_kommentar>
+            <vbrst_schluessel>481928</vbrst_schluessel>
+            <vbrst_etage>5</vbrst_etage>
+            <vbrst_ort>ÃÐ. ÑËÚÍ×ÅÂ ÁÐßÃ</vbrst_ort>
+            <vbrst_strasse_pk>50846</vbrst_strasse_pk>
+            <vbrst_strasse>ÕÎÒÅË ÊÀÐËÎÂÎ</vbrst_strasse>
+            <vbrst_strasse_rz_nummer>8240</vbrst_strasse_rz_nummer>
+            <vbrst_anschlussart_kuer>38</vbrst_anschlussart_kuer>
+            <vbrst_anschlussart>ÊÅÖ 38 Ïîìîðèå</vbrst_anschlussart>
+            <vbrst_gemeinde>ÍÅÑÅÁÚÐ</vbrst_gemeinde>
+            <vbrst_sperrhinweis2>Sperrlauf: N</vbrst_sperrhinweis2>
+            <vbrst_ort_plz>8240</vbrst_ort_plz>
+            <vbrst_kunde_name1>ØÅÍÒÎÂÀ</vbrst_kunde_name1>
+            <vbrst_kunde_name2>ÖÂÅÒÅËÈÍÀ ÑÒÎßÍÎÂÀ</vbrst_kunde_name2>
+            <vbrst_kunde_nr>1010205751</vbrst_kunde_nr>
+          <block_vbrst_parameter>
+              <objectinfo>RevisionsNr=1.3 zuletzt geandert am 26.05.2008 Variante= Sortierung=</objectinfo>
+            <vbrst_parameter id="1">
+                <objectinfo>RevisionsNr=1.12 zuletzt geandert am 03.06.2008 Variante= Sortierung=</objectinfo>
+                <vbrst_parameter_bezeichnung>ÁÈÇÍÅÑ ÎÒ 30 001 ÄÎ 100 000 ÊÂÒ×</vbrst_parameter_bezeichnung>
+                <vbrst_parameter_wert>1.00000</vbrst_parameter_wert>
+                <vbrst_parameter_von>11.07.2013</vbrst_parameter_von>
+                <vbrst_parameter_bis>02.08.2013</vbrst_parameter_bis>
+                <vbrst_parameter_taggenau>1.00000</vbrst_parameter_taggenau>
+            </vbrst_parameter>
+            <vbrst_parameter id="2">
+                <objectinfo>RevisionsNr=1.12 zuletzt geandert am 03.06.2008 Variante= Sortierung=</objectinfo>
+                <vbrst_parameter_bezeichnung>ÊÅÖ ÏÎÌÎÐÈÅ</vbrst_parameter_bezeichnung>
+                <vbrst_parameter_wert>1.00000</vbrst_parameter_wert>
+                <vbrst_parameter_von>11.07.2013</vbrst_parameter_von>
+                <vbrst_parameter_bis>02.08.2013</vbrst_parameter_bis>
+                <vbrst_parameter_taggenau>1.00000</vbrst_parameter_taggenau>
+            </vbrst_parameter>
+            <vbrst_parameter id="3">
+                <objectinfo>RevisionsNr=1.12 zuletzt geandert am 03.06.2008 Variante= Sortierung=</objectinfo>
+                <vbrst_parameter_bezeichnung>Ïðåäîñòàâåíà ìîùíîñò M</vbrst_parameter_bezeichnung>
+                <vbrst_parameter_wert>15.00000</vbrst_parameter_wert>
+                <vbrst_parameter_me>kW</vbrst_parameter_me>
+                <vbrst_parameter_von>11.07.2013</vbrst_parameter_von>
+                <vbrst_parameter_bis>02.08.2013</vbrst_parameter_bis>
+                <vbrst_parameter_taggenau>15.00000</vbrst_parameter_taggenau>
+            </vbrst_parameter>
+          </block_vbrst_parameter>
+          <zaehlpunkt id="1">
+              <zpkt_pk>1561620</zpkt_pk>
+              <zpkt_bezeichnung>BG5521900824000000000000002798102</zpkt_bezeichnung>
+              <zpkt_ist_virtuell>N</zpkt_ist_virtuell>
+              <zpkt_gueltigkeitsbereich>E</zpkt_gueltigkeitsbereich>
+              <zpkt_spannungsebene>NS</zpkt_spannungsebene>
+          </zaehlpunkt>
+          <block_ablesegebiet id="1">
+              <able_nummer>138</able_nummer>
+              <able_bezeichnung>ÄÈ3849010 Î (ÊÑ1)</able_bezeichnung>
+              <able_gilt_fuer_jva_j_n>N</able_gilt_fuer_jva_j_n>
+              <able_zahlungszeitraum_von>08.12.2013</able_zahlungszeitraum_von>
+              <able_zahlungszeitraum_bis>18.12.2013</able_zahlungszeitraum_bis>
+          </block_ablesegebiet>
+          <block_ablesegebiet id="2">
+              <able_nummer>138</able_nummer>
+              <able_bezeichnung>ÄÈ38 Ô KC1</able_bezeichnung>
+              <able_gilt_fuer_jva_j_n>J</able_gilt_fuer_jva_j_n>
+              <able_zahlungszeitraum_von>01.12.2013</able_zahlungszeitraum_von>
+              <able_zahlungszeitraum_bis>15.12.2013</able_zahlungszeitraum_bis>
+          </block_ablesegebiet>
+          <block_ablesegebiet id="3">
+              <able_nummer>138</able_nummer>
+              <able_bezeichnung>ÄÈ3849010 Î (ÊÑ1)</able_bezeichnung>
+              <able_gilt_fuer_jva_j_n>N</able_gilt_fuer_jva_j_n>
+              <able_zahlungszeitraum_von>08.12.2013</able_zahlungszeitraum_von>
+              <able_zahlungszeitraum_bis>18.12.2013</able_zahlungszeitraum_bis>
+          </block_ablesegebiet>
+          <block_ablesegebiet id="4">
+              <able_nummer>9999</able_nummer>
+              <able_bezeichnung>ñïðàâêà-ÊÅÑ 38</able_bezeichnung>
+              <able_gilt_fuer_jva_j_n>N</able_gilt_fuer_jva_j_n>
+              <able_zahlungszeitraum_von>08.12.2013</able_zahlungszeitraum_von>
+              <able_zahlungszeitraum_bis>18.12.2013</able_zahlungszeitraum_bis>
+          </block_ablesegebiet>
+          <block_ablesegebiet id="5">
+              <able_nummer>138</able_nummer>
+              <able_bezeichnung>ÄÈ38 Ô KC1</able_bezeichnung>
+              <able_gilt_fuer_jva_j_n>J</able_gilt_fuer_jva_j_n>
+              <able_zahlungszeitraum_von>01.12.2013</able_zahlungszeitraum_von>
+              <able_zahlungszeitraum_bis>15.12.2013</able_zahlungszeitraum_bis>
+          </block_ablesegebiet>
+          <block_ablesegebiet id="6">
+              <able_nummer>9999</able_nummer>
+              <able_bezeichnung>ñïðàâêà-ÊÅÑ 38</able_bezeichnung>
+              <able_gilt_fuer_jva_j_n>N</able_gilt_fuer_jva_j_n>
+              <able_zahlungszeitraum_von>08.12.2013</able_zahlungszeitraum_von>
+              <able_zahlungszeitraum_bis>18.12.2013</able_zahlungszeitraum_bis>
+          </block_ablesegebiet>
+        </block_verbrauchsstelle>
+        <block_fakturierte_abschlaege>
+        </block_fakturierte_abschlaege>
+        <block_rechnungszeilen>
+          <block_verbrauchsart id="1">
+              <rzv_verbrauchsart>Òîê ÅÑ</rzv_verbrauchsart>
+              <rzv_verbrauchsart_pk>110</rzv_verbrauchsart_pk>
+              <rzv_mengeneinheit>êÂ÷</rzv_mengeneinheit>
+              <rzv_von>11.07.2013</rzv_von>
+              <rzv_bis>02.08.2013</rzv_bis>
+              <rzv_betrag_ap>43.35</rzv_betrag_ap>
+              <rzv_betrag_gp>0.00</rzv_betrag_gp>
+              <rzv_netto>43.35</rzv_netto>
+              <rzv_steuer>8.67</rzv_steuer>
+              <rzv_brutto>52.02</rzv_brutto>
+              <rzv_verbrauch>285.00000</rzv_verbrauch>
+            <block_medium id="1">
+                <rzm_sortierfolgenummer>70</rzm_sortierfolgenummer>
+                <rzm_medium_bezeichnung>ÅÑ áèò äíåâíà</rzm_medium_bezeichnung>
+                <rzm_medium_kurzbezeichnung>À Ä</rzm_medium_kurzbezeichnung>
+                <rzm_medium_druckbezeichnung>áèò äíåâíà</rzm_medium_druckbezeichnung>
+                <rzm_mengeneinheit>êÂ÷</rzm_mengeneinheit>
+                <rzm_elektrische_leistung_j_n>N</rzm_elektrische_leistung_j_n>
+                <rzm_blindarbeit_j_n>N</rzm_blindarbeit_j_n>
+                <rzm_mengenmedium_j_n>N</rzm_mengenmedium_j_n>
+                <rzm_von>11.07.2013</rzm_von>
+                <rzm_bis>02.08.2013</rzm_bis>
+                <rzm_tage>23</rzm_tage>
+                <rzm_betrag_ap>39.20</rzm_betrag_ap>
+                <rzm_betrag_gp>0.00</rzm_betrag_gp>
+                <rzm_netto>39.20</rzm_netto>
+                <rzm_steuer>7.84</rzm_steuer>
+                <rzm_brutto>47.04</rzm_brutto>
+                <rzm_verbrauch>244.00000</rzm_verbrauch>
+                <rzm_waermemedium_j_n>N</rzm_waermemedium_j_n>
+                <rzm_ablesegebiet>ÄÈ38 Ô KC1</rzm_ablesegebiet>
+                <rzm_ablesezeitraum_von>01.11.2013</rzm_ablesezeitraum_von>
+                <rzm_ablesezeitraum_bis>04.11.2013</rzm_ablesezeitraum_bis>
+              <block_tarif id="1">
+                  <rzp_tarif_bezeichnung>Òîê ÍÍ áèòîâà</rzp_tarif_bezeichnung>
+                  <rzp_von>11.07.2013</rzp_von>
+                  <rzp_bis>02.08.2013</rzp_bis>
+                  <rzp_betrag_ap>39.20</rzp_betrag_ap>
+                  <rzp_betrag_gp>0.00</rzp_betrag_gp>
+                  <rzp_netto>39.20</rzp_netto>
+                  <rzp_steuer>7.84</rzp_steuer>
+                  <rzp_brutto>47.04</rzp_brutto>
+                  <rzp_verbrauch>244.00000</rzp_verbrauch>
+                <block_rechnungszeile id="1">
+                    <rz_reihenfolge_nummer>1</rz_reihenfolge_nummer>
+                    <rz_kennzeichen_sort>4</rz_kennzeichen_sort>
+                    <rz_darstellung_ausblenden_j_n>N</rz_darstellung_ausblenden_j_n>
+                    <rz_medium>ÅÑ áèò äíåâíà</rz_medium>
+                    <rz_medium_druck>áèò äíåâíà</rz_medium_druck>
+                    <rz_von>11.07.2013</rz_von>
+                    <rz_bis>31.07.2013</rz_bis>
+                    <rz_zaehler_nummer>030181433</rz_zaehler_nummer>
+                    <rz_zaehlerstand_alt>2733.0000</rz_zaehlerstand_alt>
+                    <rz_zaehlerstand_neu>2956.0000</rz_zaehlerstand_neu>
+                    <rz_differenz>223.0000</rz_differenz>
+                    <rz_multiplikator>1.0000</rz_multiplikator>
+                    <rz_verbrauch>223.00000</rz_verbrauch>
+                    <rz_echte_verbrauch>223.00000</rz_echte_verbrauch>
+                    <rz_verbrauch_abgerechnet>223.00000</rz_verbrauch_abgerechnet>
+                    <rz_wandlerfaktor>1.0000</rz_wandlerfaktor>
+                    <rz_verlustfaktor>1.0000</rz_verlustfaktor>
+                    <rz_nsp_zuschlag_prozent>0</rz_nsp_zuschlag_prozent>
+                    <rz_mengeneinheit>êÂ÷</rz_mengeneinheit>
+                    <rz_ableseart_kurzbezeichnung>S</rz_ableseart_kurzbezeichnung>
+                    <rz_ableseart_bezeichnung>Ðàçäåëåíèå</rz_ableseart_bezeichnung>
+                    <rz_betrag_ap>35.95</rz_betrag_ap>
+                    <rz_tage>21</rz_tage>
+                    <rz_tage_im_jahr>365</rz_tage_im_jahr>
+                    <rz_monate>1</rz_monate>
+                    <rz_betrag_vp>0.00</rz_betrag_vp>
+                    <rz_netto>35.95</rz_netto>
+                    <rz_steuer_prozent>20.00</rz_steuer_prozent>
+                    <rz_steuer>7.19</rz_steuer>
+                    <rz_brutto>43.14</rz_brutto>
+                    <rz_vertrag_id>7069231</rz_vertrag_id>
+                    <rz_bruttopreis_j_n>N</rz_bruttopreis_j_n>
+                    <rz_uc_tarif>16</rz_uc_tarif>
+                    <rz_uc_za>1</rz_uc_za>
+                  <rz_umbruchgrund>
+Zeilenumbruch ergibt sich aus:
+Anderung des Preises
+Zwischenablesung
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Anderung des Preises
+
+                    </textzeile>
+                    <textzeile id ="3">
+Zwischenablesung
+
+                    </textzeile>
+                  </rz_umbruchgrund>
+                    <rz_umbruchgrund_tarif>Zwischenablesung</rz_umbruchgrund_tarif>
+                    <rz_uc_tarif_start>16</rz_uc_tarif_start>
+                  <rz_umbruchgrund_start>
+Zeilenumbruch ergibt sich aus:
+Anderung des Preises
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Anderung des Preises
+
+                    </textzeile>
+                  </rz_umbruchgrund_start>
+                    <rz_umbruchgrund_tarif_start>Anderung des Preises</rz_umbruchgrund_tarif_start>
+                    <rz_zaehlpunkt_pk>1561620</rz_zaehlpunkt_pk>
+                    <rz_zaehlpunkt>BG5521900824000000000000002798102</rz_zaehlpunkt>
+                    <rz_vbrst_schluessel>481928</rz_vbrst_schluessel>
+                  <block_rechnungsteilzeile id ="1">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0819200</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðàáîòíà öåíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>18.27</rtz_betrag_ap>
+                      <rtz_netto>18.27</rtz_netto>
+                      <rtz_steuer>3.65</rtz_steuer>
+                      <rtz_brutto>21.92</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ðö 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="2">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0095900</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà ÑðÍ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>2.14</rtz_betrag_ap>
+                      <rtz_netto>2.14</rtz_netto>
+                      <rtz_steuer>0.43</rtz_steuer>
+                      <rtz_brutto>2.57</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 2/201 áèò äíåâíà ÑÍ</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="3">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0310300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà ÍÍ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>6.92</rtz_betrag_ap>
+                      <rtz_netto>6.92</rtz_netto>
+                      <rtz_steuer>1.38</rtz_steuer>
+                      <rtz_brutto>8.30</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 2/201 áèò äíåâíà ÍÍ</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="4">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0050300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà äîñòúï ÑðÍ/Ï</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>1.12</rtz_betrag_ap>
+                      <rtz_netto>1.12</rtz_netto>
+                      <rtz_steuer>0.22</rtz_steuer>
+                      <rtz_brutto>1.34</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 2/201 áèò äíåâíà ÑÍ/Ï</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="5">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0000000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>J</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Àêöèç 0</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.00</rtz_betrag_ap>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                      <rtz_ap_bezeichnung>Àêöèç 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>A</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="6">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0111000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà çåëåíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>2.48</rtz_betrag_ap>
+                      <rtz_netto>2.48</rtz_netto>
+                      <rtz_steuer>0.50</rtz_steuer>
+                      <rtz_brutto>2.98</rtz_brutto>
+                      <rtz_ap_bezeichnung>Çå 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="7">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0062300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÅÑÎ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>1.39</rtz_betrag_ap>
+                      <rtz_netto>1.39</rtz_netto>
+                      <rtz_steuer>0.28</rtz_steuer>
+                      <rtz_brutto>1.67</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÅÑÎ 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="8">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0038300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà çà åôåêòèâíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.85</rtz_betrag_ap>
+                      <rtz_netto>0.85</rtz_netto>
+                      <rtz_steuer>0.17</rtz_steuer>
+                      <rtz_brutto>1.02</rtz_brutto>
+                      <rtz_ap_bezeichnung>Êî 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="9">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0091000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÍÅÊ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>2.03</rtz_betrag_ap>
+                      <rtz_netto>2.03</rtz_netto>
+                      <rtz_steuer>0.41</rtz_steuer>
+                      <rtz_brutto>2.44</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÍÅÊ 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="10">
+                      <rtz_verbrauch>223.00000</rtz_verbrauch>
+                      <rtz_ap>0.0033800</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà çà íåâúçñòàí. ðàçõîäè</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.75</rtz_betrag_ap>
+                      <rtz_netto>0.75</rtz_netto>
+                      <rtz_steuer>0.15</rtz_steuer>
+                      <rtz_brutto>0.90</rtz_brutto>
+                      <rtz_ap_bezeichnung>Íåâúç 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>223.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="11">
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà åëåêòðîìåð</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_vp>0.00</rtz_betrag_vp>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                  </block_rechnungsteilzeile>
+                </block_rechnungszeile>
+                <block_rechnungszeile id="2">
+                    <rz_reihenfolge_nummer>2</rz_reihenfolge_nummer>
+                    <rz_kennzeichen_sort>4</rz_kennzeichen_sort>
+                    <rz_darstellung_ausblenden_j_n>N</rz_darstellung_ausblenden_j_n>
+                    <rz_medium>ÅÑ áèò äíåâíà</rz_medium>
+                    <rz_medium_druck>áèò äíåâíà</rz_medium_druck>
+                    <rz_von>01.08.2013</rz_von>
+                    <rz_bis>02.08.2013</rz_bis>
+                    <rz_zaehler_nummer>030181433</rz_zaehler_nummer>
+                    <rz_zaehlerstand_alt>2956.0000</rz_zaehlerstand_alt>
+                    <rz_zaehlerstand_neu>2977.0000</rz_zaehlerstand_neu>
+                    <rz_differenz>21.0000</rz_differenz>
+                    <rz_multiplikator>1.0000</rz_multiplikator>
+                    <rz_verbrauch>21.00000</rz_verbrauch>
+                    <rz_echte_verbrauch>21.00000</rz_echte_verbrauch>
+                    <rz_verbrauch_abgerechnet>21.00000</rz_verbrauch_abgerechnet>
+                    <rz_wandlerfaktor>1.0000</rz_wandlerfaktor>
+                    <rz_verlustfaktor>1.0000</rz_verlustfaktor>
+                    <rz_nsp_zuschlag_prozent>0</rz_nsp_zuschlag_prozent>
+                    <rz_mengeneinheit>êÂ÷</rz_mengeneinheit>
+                    <rz_ableseart_kurzbezeichnung>O</rz_ableseart_kurzbezeichnung>
+                    <rz_ableseart_bezeichnung>Îò÷èòàíå oò Îï.Ì</rz_ableseart_bezeichnung>
+                    <rz_betrag_ap>3.25</rz_betrag_ap>
+                    <rz_tage>2</rz_tage>
+                    <rz_tage_im_jahr>365</rz_tage_im_jahr>
+                    <rz_monate>0</rz_monate>
+                    <rz_betrag_vp>0.00</rz_betrag_vp>
+                    <rz_netto>3.25</rz_netto>
+                    <rz_steuer_prozent>20.00</rz_steuer_prozent>
+                    <rz_steuer>0.65</rz_steuer>
+                    <rz_brutto>3.90</rz_brutto>
+                    <rz_vertrag_id>7069231</rz_vertrag_id>
+                    <rz_bruttopreis_j_n>N</rz_bruttopreis_j_n>
+                    <rz_uc_tarif>8421376</rz_uc_tarif>
+                    <rz_uc_za>1</rz_uc_za>
+                  <rz_umbruchgrund>
+Zeilenumbruch ergibt sich aus:
+Ende des Abrechnungszeitraums
+Zwischenablesung
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Ende des Abrechnungszeitraums
+
+                    </textzeile>
+                    <textzeile id ="3">
+Zwischenablesung
+
+                    </textzeile>
+                  </rz_umbruchgrund>
+                    <rz_umbruchgrund_tarif>Zwischenablesung</rz_umbruchgrund_tarif>
+                    <rz_uc_tarif_start>8421376</rz_uc_tarif_start>
+                  <rz_umbruchgrund_start>
+Zeilenumbruch ergibt sich aus:
+Ende des Abrechnungszeitraums
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Ende des Abrechnungszeitraums
+
+                    </textzeile>
+                  </rz_umbruchgrund_start>
+                    <rz_umbruchgrund_tarif_start>Ende des Abrechnungszeitraums</rz_umbruchgrund_tarif_start>
+                    <rz_zaehlpunkt_pk>1561620</rz_zaehlpunkt_pk>
+                    <rz_zaehlpunkt>BG5521900824000000000000002798102</rz_zaehlpunkt>
+                    <rz_vbrst_schluessel>481928</rz_vbrst_schluessel>
+                  <block_rechnungsteilzeile id ="1">
+                      <rtz_verbrauch>21.00000</rtz_verbrauch>
+                      <rtz_ap>0.0971800</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðàáîòíà öåíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>2.04</rtz_betrag_ap>
+                      <rtz_netto>2.04</rtz_netto>
+                      <rtz_steuer>0.41</rtz_steuer>
+                      <rtz_brutto>2.45</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ðö 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>21.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="2">
+                      <rtz_verbrauch>21.00000</rtz_verbrauch>
+                      <rtz_ap>0.0400100</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà ÍÍ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.84</rtz_betrag_ap>
+                      <rtz_netto>0.84</rtz_netto>
+                      <rtz_steuer>0.17</rtz_steuer>
+                      <rtz_brutto>1.01</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 2/201 áèò äíåâíà ÍÍ</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>21.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="3">
+                      <rtz_verbrauch>21.00000</rtz_verbrauch>
+                      <rtz_ap>0.0050300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà äîñòúï ÑðÍ/Ï</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.11</rtz_betrag_ap>
+                      <rtz_netto>0.11</rtz_netto>
+                      <rtz_steuer>0.02</rtz_steuer>
+                      <rtz_brutto>0.13</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 2/201 áèò äíåâíà ÑÍ/Ï</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>21.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="4">
+                      <rtz_verbrauch>21.00000</rtz_verbrauch>
+                      <rtz_ap>0.0000000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>J</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Àêöèç 0</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.00</rtz_betrag_ap>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                      <rtz_ap_bezeichnung>Àêöèç 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>21.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>A</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="5">
+                      <rtz_verbrauch>21.00000</rtz_verbrauch>
+                      <rtz_ap>0.0027600</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÅÑÎ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.06</rtz_betrag_ap>
+                      <rtz_netto>0.06</rtz_netto>
+                      <rtz_steuer>0.01</rtz_steuer>
+                      <rtz_brutto>0.07</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÅÑÎ 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>21.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="6">
+                      <rtz_verbrauch>21.00000</rtz_verbrauch>
+                      <rtz_ap>0.0097100</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÍÅÊ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.20</rtz_betrag_ap>
+                      <rtz_netto>0.20</rtz_netto>
+                      <rtz_steuer>0.04</rtz_steuer>
+                      <rtz_brutto>0.24</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÍÅÊ 2/201 áèò äíåâíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>21.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="7">
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà åëåêòðîìåð</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_vp>0.00</rtz_betrag_vp>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                  </block_rechnungsteilzeile>
+                </block_rechnungszeile>
+              </block_tarif>
+            </block_medium>
+            <block_medium id="2">
+                <rzm_sortierfolgenummer>73</rzm_sortierfolgenummer>
+                <rzm_medium_bezeichnung>ÅÑ áèò íîùíà</rzm_medium_bezeichnung>
+                <rzm_medium_kurzbezeichnung>À Í</rzm_medium_kurzbezeichnung>
+                <rzm_medium_druckbezeichnung>áèò íîùíà</rzm_medium_druckbezeichnung>
+                <rzm_mengeneinheit>êÂ÷</rzm_mengeneinheit>
+                <rzm_elektrische_leistung_j_n>N</rzm_elektrische_leistung_j_n>
+                <rzm_blindarbeit_j_n>N</rzm_blindarbeit_j_n>
+                <rzm_mengenmedium_j_n>N</rzm_mengenmedium_j_n>
+                <rzm_von>11.07.2013</rzm_von>
+                <rzm_bis>02.08.2013</rzm_bis>
+                <rzm_tage>23</rzm_tage>
+                <rzm_betrag_ap>4.15</rzm_betrag_ap>
+                <rzm_betrag_gp>0.00</rzm_betrag_gp>
+                <rzm_netto>4.15</rzm_netto>
+                <rzm_steuer>0.83</rzm_steuer>
+                <rzm_brutto>4.98</rzm_brutto>
+                <rzm_verbrauch>41.00000</rzm_verbrauch>
+                <rzm_waermemedium_j_n>N</rzm_waermemedium_j_n>
+                <rzm_ablesegebiet>ÄÈ38 Ô KC1</rzm_ablesegebiet>
+                <rzm_ablesezeitraum_von>01.11.2013</rzm_ablesezeitraum_von>
+                <rzm_ablesezeitraum_bis>04.11.2013</rzm_ablesezeitraum_bis>
+              <block_tarif id="1">
+                  <rzp_tarif_bezeichnung>Òîê ÍÍ áèòîâà</rzp_tarif_bezeichnung>
+                  <rzp_von>11.07.2013</rzp_von>
+                  <rzp_bis>02.08.2013</rzp_bis>
+                  <rzp_betrag_ap>4.15</rzp_betrag_ap>
+                  <rzp_betrag_gp>0.00</rzp_betrag_gp>
+                  <rzp_netto>4.15</rzp_netto>
+                  <rzp_steuer>0.83</rzp_steuer>
+                  <rzp_brutto>4.98</rzp_brutto>
+                  <rzp_verbrauch>41.00000</rzp_verbrauch>
+                <block_rechnungszeile id="1">
+                    <rz_reihenfolge_nummer>3</rz_reihenfolge_nummer>
+                    <rz_kennzeichen_sort>4</rz_kennzeichen_sort>
+                    <rz_darstellung_ausblenden_j_n>N</rz_darstellung_ausblenden_j_n>
+                    <rz_medium>ÅÑ áèò íîùíà</rz_medium>
+                    <rz_medium_druck>áèò íîùíà</rz_medium_druck>
+                    <rz_von>11.07.2013</rz_von>
+                    <rz_bis>31.07.2013</rz_bis>
+                    <rz_zaehler_nummer>030181433</rz_zaehler_nummer>
+                    <rz_zaehlerstand_alt>650.0000</rz_zaehlerstand_alt>
+                    <rz_zaehlerstand_neu>687.0000</rz_zaehlerstand_neu>
+                    <rz_differenz>37.0000</rz_differenz>
+                    <rz_multiplikator>1.0000</rz_multiplikator>
+                    <rz_verbrauch>37.00000</rz_verbrauch>
+                    <rz_echte_verbrauch>37.00000</rz_echte_verbrauch>
+                    <rz_verbrauch_abgerechnet>37.00000</rz_verbrauch_abgerechnet>
+                    <rz_wandlerfaktor>1.0000</rz_wandlerfaktor>
+                    <rz_verlustfaktor>1.0000</rz_verlustfaktor>
+                    <rz_nsp_zuschlag_prozent>0</rz_nsp_zuschlag_prozent>
+                    <rz_mengeneinheit>êÂ÷</rz_mengeneinheit>
+                    <rz_ableseart_kurzbezeichnung>S</rz_ableseart_kurzbezeichnung>
+                    <rz_ableseart_bezeichnung>Ðàçäåëåíèå</rz_ableseart_bezeichnung>
+                    <rz_betrag_ap>3.76</rz_betrag_ap>
+                    <rz_tage>21</rz_tage>
+                    <rz_tage_im_jahr>365</rz_tage_im_jahr>
+                    <rz_monate>1</rz_monate>
+                    <rz_betrag_vp>0.00</rz_betrag_vp>
+                    <rz_netto>3.76</rz_netto>
+                    <rz_steuer_prozent>20.00</rz_steuer_prozent>
+                    <rz_steuer>0.76</rz_steuer>
+                    <rz_brutto>4.52</rz_brutto>
+                    <rz_vertrag_id>7069231</rz_vertrag_id>
+                    <rz_bruttopreis_j_n>N</rz_bruttopreis_j_n>
+                    <rz_uc_tarif>16</rz_uc_tarif>
+                    <rz_uc_za>1</rz_uc_za>
+                  <rz_umbruchgrund>
+Zeilenumbruch ergibt sich aus:
+Anderung des Preises
+Zwischenablesung
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Anderung des Preises
+
+                    </textzeile>
+                    <textzeile id ="3">
+Zwischenablesung
+
+                    </textzeile>
+                  </rz_umbruchgrund>
+                    <rz_umbruchgrund_tarif>Zwischenablesung</rz_umbruchgrund_tarif>
+                    <rz_zaehlpunkt_pk>1561620</rz_zaehlpunkt_pk>
+                    <rz_zaehlpunkt>BG5521900824000000000000002798102</rz_zaehlpunkt>
+                    <rz_vbrst_schluessel>481928</rz_vbrst_schluessel>
+                  <block_rechnungsteilzeile id ="1">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0095900</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà ÑðÍ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.35</rtz_betrag_ap>
+                      <rtz_netto>0.35</rtz_netto>
+                      <rtz_steuer>0.07</rtz_steuer>
+                      <rtz_brutto>0.42</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 1/10/101 áèò íîùíà ÑÍ</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="2">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0310300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà ÍÍ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>1.15</rtz_betrag_ap>
+                      <rtz_netto>1.15</rtz_netto>
+                      <rtz_steuer>0.23</rtz_steuer>
+                      <rtz_brutto>1.38</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 1/10/101 áèò íîùíà ÍÍ</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="3">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0222400</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðàáîòíà öåíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.82</rtz_betrag_ap>
+                      <rtz_netto>0.82</rtz_netto>
+                      <rtz_steuer>0.16</rtz_steuer>
+                      <rtz_brutto>0.98</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ðö 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="4">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0050300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà äîñòúï ÑðÍ/Ï</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.19</rtz_betrag_ap>
+                      <rtz_netto>0.19</rtz_netto>
+                      <rtz_steuer>0.04</rtz_steuer>
+                      <rtz_brutto>0.23</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 1/10/101 áèò íîùíà ÑÍ/Ï</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="5">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0000000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>J</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Àêöèç 0</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.00</rtz_betrag_ap>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                      <rtz_ap_bezeichnung>Àêöèç 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>A</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="6">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0111000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà çåëåíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.41</rtz_betrag_ap>
+                      <rtz_netto>0.41</rtz_netto>
+                      <rtz_steuer>0.08</rtz_steuer>
+                      <rtz_brutto>0.49</rtz_brutto>
+                      <rtz_ap_bezeichnung>Çå 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="7">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0062300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÅÑÎ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.23</rtz_betrag_ap>
+                      <rtz_netto>0.23</rtz_netto>
+                      <rtz_steuer>0.05</rtz_steuer>
+                      <rtz_brutto>0.28</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÅÑÎ 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="8">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0038300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà çà åôåêòèâíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.14</rtz_betrag_ap>
+                      <rtz_netto>0.14</rtz_netto>
+                      <rtz_steuer>0.03</rtz_steuer>
+                      <rtz_brutto>0.17</rtz_brutto>
+                      <rtz_ap_bezeichnung>Êî 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="9">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0091000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÍÅÊ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.34</rtz_betrag_ap>
+                      <rtz_netto>0.34</rtz_netto>
+                      <rtz_steuer>0.07</rtz_steuer>
+                      <rtz_brutto>0.41</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÍÅÊ 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="10">
+                      <rtz_verbrauch>37.00000</rtz_verbrauch>
+                      <rtz_ap>0.0033800</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà çà íåâúçñòàí. ðàçõîäè</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.13</rtz_betrag_ap>
+                      <rtz_netto>0.13</rtz_netto>
+                      <rtz_steuer>0.03</rtz_steuer>
+                      <rtz_brutto>0.16</rtz_brutto>
+                      <rtz_ap_bezeichnung>Íåâúç 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>37.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="11">
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà åëåêòðîìåð</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_vp>0.00</rtz_betrag_vp>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                  </block_rechnungsteilzeile>
+                </block_rechnungszeile>
+                <block_rechnungszeile id="2">
+                    <rz_reihenfolge_nummer>4</rz_reihenfolge_nummer>
+                    <rz_kennzeichen_sort>4</rz_kennzeichen_sort>
+                    <rz_darstellung_ausblenden_j_n>N</rz_darstellung_ausblenden_j_n>
+                    <rz_medium>ÅÑ áèò íîùíà</rz_medium>
+                    <rz_medium_druck>áèò íîùíà</rz_medium_druck>
+                    <rz_von>01.08.2013</rz_von>
+                    <rz_bis>02.08.2013</rz_bis>
+                    <rz_zaehler_nummer>030181433</rz_zaehler_nummer>
+                    <rz_zaehlerstand_alt>687.0000</rz_zaehlerstand_alt>
+                    <rz_zaehlerstand_neu>691.0000</rz_zaehlerstand_neu>
+                    <rz_differenz>4.0000</rz_differenz>
+                    <rz_multiplikator>1.0000</rz_multiplikator>
+                    <rz_verbrauch>4.00000</rz_verbrauch>
+                    <rz_echte_verbrauch>4.00000</rz_echte_verbrauch>
+                    <rz_verbrauch_abgerechnet>4.00000</rz_verbrauch_abgerechnet>
+                    <rz_wandlerfaktor>1.0000</rz_wandlerfaktor>
+                    <rz_verlustfaktor>1.0000</rz_verlustfaktor>
+                    <rz_nsp_zuschlag_prozent>0</rz_nsp_zuschlag_prozent>
+                    <rz_mengeneinheit>êÂ÷</rz_mengeneinheit>
+                    <rz_ableseart_kurzbezeichnung>O</rz_ableseart_kurzbezeichnung>
+                    <rz_ableseart_bezeichnung>Îò÷èòàíå oò Îï.Ì</rz_ableseart_bezeichnung>
+                    <rz_betrag_ap>0.39</rz_betrag_ap>
+                    <rz_tage>2</rz_tage>
+                    <rz_tage_im_jahr>365</rz_tage_im_jahr>
+                    <rz_monate>0</rz_monate>
+                    <rz_betrag_vp>0.00</rz_betrag_vp>
+                    <rz_netto>0.39</rz_netto>
+                    <rz_steuer_prozent>20.00</rz_steuer_prozent>
+                    <rz_steuer>0.07</rz_steuer>
+                    <rz_brutto>0.46</rz_brutto>
+                    <rz_vertrag_id>7069231</rz_vertrag_id>
+                    <rz_bruttopreis_j_n>N</rz_bruttopreis_j_n>
+                    <rz_uc_tarif>8421376</rz_uc_tarif>
+                    <rz_uc_za>1</rz_uc_za>
+                  <rz_umbruchgrund>
+Zeilenumbruch ergibt sich aus:
+Ende des Abrechnungszeitraums
+Zwischenablesung
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Ende des Abrechnungszeitraums
+
+                    </textzeile>
+                    <textzeile id ="3">
+Zwischenablesung
+
+                    </textzeile>
+                  </rz_umbruchgrund>
+                    <rz_umbruchgrund_tarif>Zwischenablesung</rz_umbruchgrund_tarif>
+                    <rz_uc_tarif_start>16</rz_uc_tarif_start>
+                  <rz_umbruchgrund_start>
+Zeilenumbruch ergibt sich aus:
+Anderung des Preises
+
+                    <textzeile id ="1">
+Zeilenumbruch ergibt sich aus:
+
+                    </textzeile>
+                    <textzeile id ="2">
+Anderung des Preises
+
+                    </textzeile>
+                  </rz_umbruchgrund_start>
+                    <rz_umbruchgrund_tarif_start>Anderung des Preises</rz_umbruchgrund_tarif_start>
+                    <rz_zaehlpunkt_pk>1561620</rz_zaehlpunkt_pk>
+                    <rz_zaehlpunkt>BG5521900824000000000000002798102</rz_zaehlpunkt>
+                    <rz_vbrst_schluessel>481928</rz_vbrst_schluessel>
+                  <block_rechnungsteilzeile id ="1">
+                      <rtz_verbrauch>4.00000</rtz_verbrauch>
+                      <rtz_ap>0.0400100</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà ÍÍ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.16</rtz_betrag_ap>
+                      <rtz_netto>0.16</rtz_netto>
+                      <rtz_steuer>0.03</rtz_steuer>
+                      <rtz_brutto>0.19</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 1/10/101 áèò íîùíà ÍÍ</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>4.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="2">
+                      <rtz_verbrauch>4.00000</rtz_verbrauch>
+                      <rtz_ap>0.0389200</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðàáîòíà öåíà åíåðãèÿ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.16</rtz_betrag_ap>
+                      <rtz_netto>0.16</rtz_netto>
+                      <rtz_steuer>0.03</rtz_steuer>
+                      <rtz_brutto>0.19</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ðö 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>4.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="3">
+                      <rtz_verbrauch>4.00000</rtz_verbrauch>
+                      <rtz_ap>0.0050300</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Ðö Ïîëçâàíå ìðåæà äîñòúï ÑðÍ/Ï</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.02</rtz_betrag_ap>
+                      <rtz_netto>0.02</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.02</rtz_brutto>
+                      <rtz_ap_bezeichnung>Ìð 1/10/101 áèò íîùíà ÑÍ/Ï</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>4.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>N</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="4">
+                      <rtz_verbrauch>4.00000</rtz_verbrauch>
+                      <rtz_ap>0.0000000</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>J</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Àêöèç 0</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.00</rtz_betrag_ap>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                      <rtz_ap_bezeichnung>Àêöèç 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>4.00000</rtz_verbrauch_abgerechnet>
+                      <rtz_preiskategorie>A</rtz_preiskategorie>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="5">
+                      <rtz_verbrauch>4.00000</rtz_verbrauch>
+                      <rtz_ap>0.0027600</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÅÑÎ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.01</rtz_betrag_ap>
+                      <rtz_netto>0.01</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.01</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÅÑÎ 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>4.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="6">
+                      <rtz_verbrauch>4.00000</rtz_verbrauch>
+                      <rtz_ap>0.0097100</rtz_ap>
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà ìðåæà ÍÅÊ</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_ap>0.04</rtz_betrag_ap>
+                      <rtz_netto>0.04</rtz_netto>
+                      <rtz_steuer>0.01</rtz_steuer>
+                      <rtz_brutto>0.05</rtz_brutto>
+                      <rtz_ap_bezeichnung>ÍÅÊ 1/10/101 áèò íîùíà</rtz_ap_bezeichnung>
+                      <rtz_verbrauch_abgerechnet>4.00000</rtz_verbrauch_abgerechnet>
+                  </block_rechnungsteilzeile>
+                  <block_rechnungsteilzeile id ="7">
+                      <rtz_ap_preisart_steuer_j_n>N</rtz_ap_preisart_steuer_j_n>
+                      <rtz_ap_preisart_bezeichnung>Öåíà åëåêòðîìåð</rtz_ap_preisart_bezeichnung>
+                      <rtz_betrag_vp>0.00</rtz_betrag_vp>
+                      <rtz_netto>0.00</rtz_netto>
+                      <rtz_steuer>0.00</rtz_steuer>
+                      <rtz_brutto>0.00</rtz_brutto>
+                  </block_rechnungsteilzeile>
+                </block_rechnungszeile>
+              </block_tarif>
+            </block_medium>
+          </block_verbrauchsart>
+        </block_rechnungszeilen>
+        <block_saldeninfo>
+            <si_summe_rzeilen_netto>43.35</si_summe_rzeilen_netto>
+            <si_summe_rzeilen_steuer>8.67</si_summe_rzeilen_steuer>
+            <si_summe_rzeilen_brutto>52.02</si_summe_rzeilen_brutto>
+            <si_summe_fakt_abschlaege>0.00</si_summe_fakt_abschlaege>
+            <si_rechnungsbetrag_ew>52.02</si_rechnungsbetrag_ew>
+            <si_abs_rechnungsbetrag_ew>52.02</si_abs_rechnungsbetrag_ew>
+            <si_ausstehende_zahlungen>0.00</si_ausstehende_zahlungen>
+            <si_bezahlte_abschlaege>0.00</si_bezahlte_abschlaege>
+            <si_mahngebuehren>0.00</si_mahngebuehren>
+            <si_mahngebuehren_info>0.00</si_mahngebuehren_info>
+            <si_mahnzinsen>0.00</si_mahnzinsen>
+            <si_mahnzinsen_info>0.00</si_mahnzinsen_info>
+            <si_neu_abschlag_brutto>0.00</si_neu_abschlag_brutto>
+            <si_saldo_in_rechnung_ew>52.02</si_saldo_in_rechnung_ew>
+            <si_abs_saldo_in_rechnung_ew>52.02</si_abs_saldo_in_rechnung_ew>
+            <si_faelligkeitsdatum>24.10.2013</si_faelligkeitsdatum>
+            <si_zahlungsberuecksichtigung>14.10.2013</si_zahlungsberuecksichtigung>
+            <si_saldo_nach_buchung_ew>52.02</si_saldo_nach_buchung_ew>
+            <si_periode_buchung>2013.10-10</si_periode_buchung>
+            <si_rech_nn_brutto>15.59</si_rech_nn_brutto>
+            <si_rech_nn_netto>13.00</si_rech_nn_netto>
+        </block_saldeninfo>
+      </block_rechnung>
+    </block_rechnungen>
+    <ende>
+        <erstellung_ende_datum>18.10.2013</erstellung_ende_datum>
+        <erstellung_ende_uhr>16:47</erstellung_ende_uhr>
+    </ende>
+  </rechnungsformular>
+</formular>
+

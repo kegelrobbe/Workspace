@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><License created="2024-03-13" expires="2026-05-01" type="test" updated="2025-08-07" version="1.1"><ID>506028_506028_2026-05-01</ID><Licensee><Company>
+<OrganizationID>506028</OrganizationID>
+<OrganizationName>kühn &amp; weyh Software GmbH</OrganizationName>
+<OrganizationalUnit/></Company><Address>
+<Line>Linnéstraße 1-3</Line>
+<Line>79110 Freiburg</Line>
+<Line>Germany</Line></Address></Licensee><LicenseUser><Company>
+<OrganizationID>506028</OrganizationID>
+<OrganizationName>kühn &amp; weyh Software GmbH</OrganizationName>
+<OrganizationalUnit/></Company></LicenseUser>
+<Products>
+<Product>
+<Name>M/Workbench</Name></Product>
+<Product>
+<Name>M/TEXT Server</Name></Product>
+<Product>
+<Name>M/TEXT TONIC Server</Name></Product>
+<Product>
+<Name>M/TEXT Classic Server</Name></Product>
+<Product>
+<Name>M/OMS Server</Name></Product>
+<Product>
+<Name>M/TEXT TONIC Client</Name></Product>
+<Product>
+<Name>M/TEXT Classic Client</Name></Product>
+<Product>
+<Name>M/TEXT TONIC Daemon Client</Name></Product>
+<Product>
+<Name>M/TEXT Classic Daemon Client</Name></Product>
+<Product>
+<Name>M/TEXT TONIC Content Hub</Name></Product>
+<Product>
+<Name>Integrationadapter</Name></Product>
+<Product>
+<Name>Output Format AFP</Name></Product>
+<Product>
+<Name>Output Format PDF</Name></Product>
+<Product>
+<Name>Output Format PCL</Name></Product>
+<Product>
+<Name>Output Format PostScript</Name></Product>
+<Product>
+<Name>Output Format HTML</Name></Product>
+<Product>
+<Name>Output Channel Archive</Name></Product>
+<Product>
+<Name>Output Channel Email/Fax</Name></Product></Products><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>mSs/T/cCdTc/ms4ylyktdQVlb6PxDMhb5jY+d1owNQg=</DigestValue></Reference></SignedInfo><SignatureValue>iD9saA3WMG52Y1SEigvmFHdhrEx1PvEgvxppba/uOveKhG4egMmQLD/8ipiax3WhJOXK/CMtEX/c&#13;
+Zo+JxH5VKBQ1tYQkj7YWhFFay8zFO1xdZt5SczpmLwMy8VLD/W55svbnWMAlm7sivBuTzBRMA8CY&#13;
+aESFuqgKaQroBUsO+UaSwZoQjk46rsMtpn/X/MYozs+nJSLeJqmwaKvUJbWbs54NOt3oYl75q6t9&#13;
+pRqBurz7YAxhzbQzH/VJaXGu5zf1tYFaRrNVgcWVb704t+p/+vS8irBbJ5qmitUykndHJ+Ckaojr&#13;
+LsYXD7sqF1BYear6xs+wuP5lnDr+oBGopS162w==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>txQdOiZlCNBgYNUqdGTwNdGnNRKlBziDK5JSl41pTUo+3wiEnQfEHjjqMtx9CCt2PYciO3OlZYaS&#13;
+bRrwsEGkmpJ866Gvyt6YyxC4QW+QpyndwNgUf7LZ8JzEcJg54TvT65bift+bb+OAXDEyhjk9G62b&#13;
+KRlAH6PUUBIDh4yGDNmrxXH2uQjgwDf1SZvSexWC/ISx8t9P24kUISdSFp5tlysMqeR1k37LGEIY&#13;
+EchHFN0CbPg8dk0m6m77m+rhEmRb0ENbDstFVJGRsgomWifoDvQl9SA8MH8BoLAiz6P0J5BiR1kY&#13;
+Udiy4FFkG+/VeCziJZ397nTg7FWphWRuK6Xq8w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></License>

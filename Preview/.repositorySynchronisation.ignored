@@ -1,0 +1,4 @@
+export-regressiontest%2Fpdf\**
+export-image%2Fpng\**
+Workflow_TEST\**
+export-image\**

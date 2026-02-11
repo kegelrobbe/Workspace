@@ -1,0 +1,25 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Tarif" ref="\\Framework_UtilitiesCustomer\Data\block_tarif.datamodel">
+   <Description></Description>
+  </ParamDef>
+  <ParamDef name="Rechnungsdaten" ref="\\Framework_UtilitiesCustomer\Data\block_rechnungsdaten.datamodel" provided="true">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Text>Tarif: </Text>
+    <Data>$Tarif.rzp_tarif_bezeichnung</Data>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <ForEach><![CDATA[$Tarif.block_rechnungszeile]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <ContainerPartRef uri="Models\Rechnungszeile.model">
+    <Param name="Rechnungszeile">$block_rechnungszeile</Param>
+   </ContainerPartRef>
+  </ContainerPart>
+ </Container>
+</ContainerPart>

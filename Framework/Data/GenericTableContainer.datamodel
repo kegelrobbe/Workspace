@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataModel>
+   <Node multiple="false" name="TableHeader">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="true"
+            name="TableRow"
+            ref="\\Framework\Data\TableRow.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false" name="TableBody">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="true"
+            name="TableRow"
+            ref="\\Framework\Data\TableRow.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+   <Node multiple="false" name="TableFooter">
+      <Settings>
+         <Script/>
+      </Settings>
+      <Node multiple="true"
+            name="TableRow"
+            ref="\\Framework\Data\TableRow.datamodel">
+         <Settings>
+            <Script/>
+         </Settings>
+      </Node>
+   </Node>
+</DataModel>

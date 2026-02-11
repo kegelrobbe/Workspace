@@ -1,0 +1,8 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Header" ref="\\Framework\Data\MixedContentContainer.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <ContainerExtensionDef id="ContentExtension_Logo"></ContainerExtensionDef>
+</ContainerPart>

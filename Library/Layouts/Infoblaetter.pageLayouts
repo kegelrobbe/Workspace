@@ -1,0 +1,12 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DefaultPageLayout>
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+  <Region name="Body">
+   <Left distance="1.5cm" anchorSide="same"></Left>
+   <Top distance="1.0cm" anchorSide="same"></Top>
+   <Right distance="1.5cm" anchorSide="same"></Right>
+   <Bottom distance="1.0cm" anchorSide="same"></Bottom>
+  </Region>
+ </DefaultPageLayout>
+</PageLayouts>

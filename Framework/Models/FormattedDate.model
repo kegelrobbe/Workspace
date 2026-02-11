@@ -1,0 +1,48 @@
+<ParPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <DataNodeDef name="formattedDTString">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Script><![CDATA[var dateTime = $DateTimeString.valueOf();
+var retVal = dateTime;
+var formatString = $DateTimeFormat.valueOf();
+switch(formatString ) {
+  case "102":
+    retVal = dateTime.substring(6,8) + "." +  dateTime.substring(4,6) + "." +  dateTime.substring(0,4);
+    break;
+  default:
+    retVal = dateTime.substring(0,4) + "-" +  dateTime.substring(4,6) + "-" +  dateTime.substring(6,8);
+}
+retVal;]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+  <ParamDef name="DateTimeString">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <ParamDef name="DateTimeFormat">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+ </DataDefinition>
+ <Span>
+  <Style>
+   <FontStyle>bold</FontStyle>
+  </Style>
+  <Data>$formattedDTString</Data>
+ </Span>
+</ParPart>

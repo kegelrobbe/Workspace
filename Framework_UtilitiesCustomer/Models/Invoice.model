@@ -1,0 +1,161 @@
+<DocumentPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Invoice" ref="\\Framework_UtilitiesCustomer\Data\block_rechnung.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <DocumentPart logicalDocument="true">
+  <DataDefinition></DataDefinition>
+  <Section>
+   <Style parentName="DIN5008B"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>logo</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\logo.model">
+     <Extensions>
+      <ContainerExtension id="logo">
+       <Image uri="mtx:Ressources/Logo.jpg">
+        <Style>
+         <ShiftX>0.0cm</ShiftX>
+         <FillContainerWidth>true</FillContainerWidth>
+         <FillContainerHeight>true</FillContainerHeight>
+         <Stretch>keep_aspect_ratio</Stretch>
+         <VerticalAlignment>first</VerticalAlignment>
+         <HorizontalAlignment>last</HorizontalAlignment>
+        </Style>
+       </Image>
+      </ContainerExtension>
+     </Extensions>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>senderaddress</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\senderaddress.model">
+     <Extensions>
+      <ContainerExtension id="senderaddress">
+       <Par>
+        <Style>
+         <LineSpacing type="fixed" value="0.0pt"></LineSpacing>
+        </Style>
+        <Span>
+         <Style>
+          <FontSize>7.0pt</FontSize>
+         </Style>
+         <Text>Absenderanschrift, die nicht im Datenstrom enthalten ist</Text>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>contactinformation</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\contactinformation.model">
+     <Extensions>
+      <ContainerExtension id="Extension1">
+       <Par>
+        <Style>
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Style>
+          <FontSize>11.0pt</FontSize>
+         </Style>
+         <Data>$rechnungsdaten.stamm_mita_name</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+       <Par>
+        <Style>
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Style>
+          <FontSize>11.0pt</FontSize>
+         </Style>
+         <Data>$rechnungsdaten.stamm_mita_kuerzel</Data>
+         <Text> </Text>
+         <Data>$rechnungsdaten.stamm_mita_vorname</Data>
+         <Text> </Text>
+         <Data>$rechnungsdaten.stamm_mita_nummer</Data>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="rechnungsdaten">$Invoice.block_rechnungsdaten</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>recipientaddress</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\recipientaddress.model">
+     <Extensions>
+      <ContainerExtension id="recepientaddress">
+       <ContainerPart>
+        <ForEach><![CDATA[$BlockAnschriften.block_anschriften_rechempf.anschriften]]></ForEach>
+        <DataDefinition></DataDefinition>
+        <ContainerPart>
+         <VisibleIf><![CDATA[$anschriften.an_rechnungsaktive_anschr_j_n.valueOf()=="J"]]></VisibleIf>
+         <DataDefinition></DataDefinition>
+         <ContainerPartRef uri="Models\AnschriftEmpfaenger.model">
+          <Param name="Anschrift">$anschriften</Param>
+         </ContainerPartRef>
+        </ContainerPart>
+       </ContainerPart>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="BlockAnschriften">$Invoice.block_anschriften</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <Container>
+    <ContainerPartRef uri="Models\InvoiceBody.model">
+     <Param name="block_verbrauchsart">$Invoice.block_rechnungszeilen.block_verbrauchsart</Param>
+     <Param name="block_rechnungsdaten">$Invoice.block_rechnungsdaten</Param>
+     <Param name="anschriften">$Invoice.block_anschriften.block_anschriften_vbrst.anschriften</Param>
+     <Param name="block_verbrauchsstelle">$Invoice.block_verbrauchsstelle</Param>
+    </ContainerPartRef>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>letterdate</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\letterdate.model">
+     <Extensions>
+      <ContainerExtension id="letterdate">
+       <Par>
+        <Style>
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Style>
+          <FontSize>11.0pt</FontSize>
+         </Style>
+         <Text></Text>
+         <Data>$Invoice.block_rechnungsdaten.stamm_rechnungsdatum</Data>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>companyfooter</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\companyfooter.model"></ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>marginalnotes</RegionRef>
+    </Style>
+    <ContainerPartRef uri="Models\marginalnotes.model"></ContainerPartRef>
+   </StaticContainer>
+  </Section>
+ </DocumentPart>
+</DocumentPart>

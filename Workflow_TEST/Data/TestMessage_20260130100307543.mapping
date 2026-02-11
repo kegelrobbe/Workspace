@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Mapping alwaysAddRootElement="true">
+   <DataModel root-path="">\\Workflow_TEST\Data\TestMessage_20260130100307543.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="true" name="/TestMessage_20260130100307543" xpath="/rsm:CrossIndustryInvoice"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

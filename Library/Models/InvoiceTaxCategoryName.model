@@ -1,0 +1,55 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="TaxCategoryCode">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </ParamDef>
+  <DataNodeDef name="TaxCategoryName">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+   <Subtype></Subtype>
+   <Script><![CDATA[/**
+ * S	- Standard rate
+ * Z	- Zero rated goods
+ * E	- Exempt from tax
+ * AE - VAT Reverse charge
+ * K	- VAT exempt for EEA intra-community supply of goods and services
+ * G	- Free export item, tax not charged
+ * O	- Service outside scope of tax
+ * L	- Canary Islands general indirect tax
+ * M - Tax for production, services and importation in Ceuta and Melilla
+**/
+var taxCode = $TaxCategoryCode.valueOf();
+var taxName = "CategoryCode: " + taxCode;
+switch (taxCode)
+{
+	case "S" : taxName = "Standard rate"; break;
+	case "Z" : taxName = "Zero rated goods"; break;
+	case "E" : taxName = "Exempt from tax"; break;
+	case "AE" : taxName = "VAT Reverse charge"; break;
+	case "K" : taxName = "VAT exempt for EEA intra-community supply of goods and services"; break;
+	case "G" : taxName = "Free export item, tax not charged"; break;
+	case "O" : taxName = "Service outside scope of tax";break;
+	case "L" : taxName = "Canary Islands general indirect tax";break;
+	case "M" : taxName = "Tax for production, services and importation in Ceuta and Melilla";break;
+}
+taxName;]]></Script>
+   <Validation validation-type="any_value" operator="any" allow-empty-value="true">
+    <Values></Values>
+   </Validation>
+  </DataNodeDef>
+ </DataDefinition>
+ <Par>
+  <Style parentName="Generic 10pt"></Style>
+  <Span>
+   <Data>$TaxCategoryName</Data>
+   <Text></Text>
+  </Span>
+ </Par>
+</ContainerPart>

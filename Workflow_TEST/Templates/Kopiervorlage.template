@@ -1,0 +1,149 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\Workflow_TEST\Templates\Kopiervorlage.template">
+ <DataDefinition>
+  <ParamDef name="MESSAGE" ref="\\Framework\Data\Message.datamodel" dataMappingRef="\\Framework\Data\Message.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+  <ParamDef name="BUSINESS" ref="\\Framework\Data\BUSINESS.datamodel" dataMappingRef="\\Framework\Data\Invoice.mapping" constantDataRef="">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="DIN5008B"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Header</RegionRef>
+    </Style>
+    <Image uri="mtx:Ressources/logo.png">
+     <Style>
+      <ShiftY>0.5cm</ShiftY>
+      <Height>3.0cm</Height>
+      <FillContainerWidth>true</FillContainerWidth>
+      <FillContainerHeight>true</FillContainerHeight>
+      <Stretch>keep_aspect_ratio</Stretch>
+      <VerticalAlignment>center</VerticalAlignment>
+      <HorizontalAlignment>center</HorizontalAlignment>
+     </Style>
+    </Image>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>SenderAddressLine</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\SenderAdressLine.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_SenderAddressLine">
+       <Par>
+        <Style parentName="Generic 8pt"></Style>
+        <Span>
+         <Data>$Line.SingleLine</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="Line">$MESSAGE.Sender.Address</Param>
+    </ContainerPartRef>
+    <Par>
+     <Style parentName="Generic 8pt"></Style>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>ContactDetails</RegionRef>
+    </Style>
+    <ContainerPartRef uri="DocumentParts\ContactDetails.model">
+     <Extensions>
+      <ContainerExtension id="ContentExtension_ContactDetails">
+       <ContainerPart>
+        <ForEach><![CDATA[$MESSAGE.ContactDetails.Line]]></ForEach>
+        <DataDefinition></DataDefinition>
+        <Par>
+         <Style parentName="Generic 11pt"></Style>
+         <Span>
+          <Text></Text>
+          <Data>$Line</Data>
+         </Span>
+        </Par>
+       </ContainerPart>
+      </ContainerExtension>
+     </Extensions>
+     <Param name="ContactDetails">$MESSAGE.ContactDetails</Param>
+     <Param name="Date">$MESSAGE.Date</Param>
+    </ContainerPartRef>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>RecipientAddress</RegionRef>
+    </Style>
+    <Par>
+     <ParPart>
+      <ForEach><![CDATA[$MESSAGE.Recipient.Address.Lines.Line]]></ForEach>
+      <DataDefinition></DataDefinition>
+      <Span>
+       <Data>$Line</Data>
+       <Text>
+</Text>
+      </Span>
+     </ParPart>
+    </Par>
+   </StaticContainer>
+   <Container>
+    <Par>
+     <Style>
+      <SpaceAfter resolution="combine">0.4cm</SpaceAfter>
+     </Style>
+     <Span>
+      <Data>$MESSAGE.SalutatoryAddress.Line.instance(0)</Data>
+      <Text>, </Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style>
+      <SpaceAfter resolution="combine">0.4cm</SpaceAfter>
+     </Style>
+     <Span>
+      <Text>das ist ein Beispiel, welches lediglich als Kopiervorlage dient. </Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style>
+      <SpaceAfter resolution="combine">0.4cm</SpaceAfter>
+     </Style>
+     <Span>
+      <Data>$MESSAGE.ComplimentaryClose.Line.instance(0)</Data>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Footer</RegionRef>
+    </Style>
+    <ContainerPart>
+     <ForEach><![CDATA[$MESSAGE.Footer.Line]]></ForEach>
+     <DataDefinition></DataDefinition>
+     <Par>
+      <Span>
+       <Data>$Line</Data>
+       <Text></Text>
+      </Span>
+     </Par>
+    </ContainerPart>
+   </StaticContainer>
+  </Section>
+ </Document>
+</RootPart>

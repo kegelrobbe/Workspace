@@ -1,0 +1,48 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="PostalTradeAddress" ref="\\Framework\Data\PostalTradeAddress.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Style parentName="Generic 10pt"></Style>
+   <Span>
+    <Data>$PostalTradeAddress.LineOne</Data>
+    <Text></Text>
+   </Span>
+  </Par>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$PostalTradeAddress.LineTwo.notEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Style parentName="Generic 10pt"></Style>
+    <Span>
+     <Data>$PostalTradeAddress.LineTwo</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </ContainerPart>
+  <ContainerPart>
+   <VisibleIf><![CDATA[$PostalTradeAddress.LineThree.notEmpty()]]></VisibleIf>
+   <DataDefinition></DataDefinition>
+   <Par>
+    <Style parentName="Generic 10pt"></Style>
+    <Span>
+     <Data>$PostalTradeAddress.LineThree</Data>
+     <Text></Text>
+    </Span>
+   </Par>
+  </ContainerPart>
+  <Par>
+   <Style parentName="Generic 10pt"></Style>
+   <Span>
+    <Data>$PostalTradeAddress.CountryID</Data>
+    <Text> </Text>
+    <Data>$PostalTradeAddress.PostcodeCode</Data>
+    <Text> </Text>
+    <Data>$PostalTradeAddress.CityName</Data>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

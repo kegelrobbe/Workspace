@@ -1,0 +1,38 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="Anschrift" ref="\\Framework_UtilitiesCustomer\Data\anschrift.datamodel">
+   <Description></Description>
+  </ParamDef>
+ </DataDefinition>
+ <Container>
+  <Par>
+   <Span>
+    <Data>$Anschrift.an_name1</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_name2</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_name3</Data>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Data>$Anschrift.an_strasse</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_hausnummer</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_zusatzhausnummer</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_wohnungsnummer</Data>
+   </Span>
+  </Par>
+  <Par>
+   <Span>
+    <Data>$Anschrift.an_lkz</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_plz</Data>
+    <Text> </Text>
+    <Data>$Anschrift.an_ort</Data>
+   </Span>
+  </Par>
+ </Container>
+</ContainerPart>

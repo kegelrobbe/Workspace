@@ -1,0 +1,259 @@
+<ContainerPart xmlns="urn:kwsoft:mtext:tonic:dom">
+ <DataDefinition>
+  <ParamDef name="ApplicableHeaderTradeSettlement" ref="\\Framework\Data\ApplicableHeaderTradeSettlement.datamodel"></ParamDef>
+ </DataDefinition>
+ <Table>
+  <Headers>
+   <Header>
+    <Row>
+     <Cell>
+      <ColSpan><![CDATA[2]]></ColSpan>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Document Totals</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Header>
+  </Headers>
+  <Footers>
+   <Footer>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Grand Total Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.GrandTotalAmount.value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Total Prepaid Amount</Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Text>-</Text>
+         <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.TotalPrepaidAmount.value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+    <Row>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt"></Style>
+        <Span>
+         <Text>Due Payable Amount </Text>
+        </Span>
+        <Span>
+         <Style>
+          <FontStyle>bold,italics</FontStyle>
+         </Style>
+         <Data>$ApplicableHeaderTradeSettlement.InvoiceCurrencyCode</Data>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+     <Cell>
+      <Container>
+       <Par>
+        <Style parentName="Generic 10pt">
+         <Align>right</Align>
+        </Style>
+        <Span>
+         <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.DuePayableAmount.value</Data>
+         <Text></Text>
+        </Span>
+       </Par>
+      </Container>
+     </Cell>
+    </Row>
+   </Footer>
+  </Footers>
+  <Columns>
+   <Column>
+    <Style>
+     <ColumnWidth>340358.0mpt</ColumnWidth>
+    </Style>
+   </Column>
+   <Column>
+    <Style>
+     <ColumnWidth>auto</ColumnWidth>
+    </Style>
+   </Column>
+  </Columns>
+  <Style parentName="RibbonsLightDense"></Style>
+  <Row>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt"></Style>
+      <Span>
+       <Text>Line Total Amount</Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt">
+       <Align>right</Align>
+      </Style>
+      <Span>
+       <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.LineTotalAmount.value</Data>
+       <Text></Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+  </Row>
+  <Row>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt"></Style>
+      <Span>
+       <Text>Charge Total Amount</Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt">
+       <Align>right</Align>
+      </Style>
+      <Span>
+       <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.ChargeTotalAmount.value</Data>
+       <Text></Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+  </Row>
+  <Row>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt"></Style>
+      <Span>
+       <Text>Allowance Total Amount</Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt">
+       <Align>right</Align>
+      </Style>
+      <Span>
+       <Text>-</Text>
+       <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.AllowanceTotalAmount.value</Data>
+       <Text></Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+  </Row>
+  <Row>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt"></Style>
+      <Span>
+       <Text>Tax Basis Total Amount</Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+   <Cell>
+    <Container>
+     <Par>
+      <Style parentName="Generic 10pt">
+       <Align>right</Align>
+      </Style>
+      <Span>
+       <Data>$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.TaxBasisTotalAmount.value</Data>
+       <Text></Text>
+      </Span>
+     </Par>
+    </Container>
+   </Cell>
+  </Row>
+  <TablePart>
+   <ForEach><![CDATA[$ApplicableHeaderTradeSettlement.SpecifiedTradeSettlementHeaderMonetarySummation.TaxTotalAmount]]></ForEach>
+   <DataDefinition></DataDefinition>
+   <Row>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt"></Style>
+       <Span>
+        <Text>Tax Total Amount </Text>
+       </Span>
+       <Span>
+        <Style>
+         <FontStyle>italics</FontStyle>
+        </Style>
+        <Data>$TaxTotalAmount.currencyID</Data>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+    <Cell>
+     <Container>
+      <Par>
+       <Style parentName="Generic 10pt">
+        <Align>right</Align>
+       </Style>
+       <Span>
+        <Data>$TaxTotalAmount.value</Data>
+        <Text></Text>
+       </Span>
+      </Par>
+     </Container>
+    </Cell>
+   </Row>
+  </TablePart>
+ </Table>
+</ContainerPart>
