@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\\library\fast.template" scriptResource="\\Framework\Scripts\LoadAll.js">
+     
+    <DataDefinition>
+        <ParamDef constantDataRef="" dataMappingRef="\\Framework\Data\MESSAGE.mapping" name="MESSAGE" ref="\\Framework\Data\MESSAGE.datamodel">
+            <Description/>
+            <Input text-prefix="" text-suffix=""/>
+            <Output text-prefix="" text-suffix=""/>
+        </ParamDef>
+    </DataDefinition>
+     
+    <ModificationRights>
+          
+        <Allowed>
+               
+            <ModificationRight operations="INPUT" role="_EVERYONE_"/>
+              
+        </Allowed>
+          
+        <Denied/>
+         
+    </ModificationRights>
+     
+    <Document>
+          
+        <Section>
+               
+            <Style parentName="DIN5008B"/>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>ContactDetails2</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="DocumentParts\HeaderContactDetails.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_HeaderContactDetails">
+                                   
+                            <Container>
+                                        
+                                <ContainerPart>
+                                             
+                                    <ForEach><![CDATA[$ContactDetails.Line]]></ForEach>
+                                             
+                                    <DataDefinition/>
+                                             
+                                    <ContainerPart>
+                                                  
+                                        <VisibleIf><![CDATA[$Line.notEmpty()]]></VisibleIf>
+                                                  
+                                        <DataDefinition/>
+                                                  
+                                        <Par>
+                                                       
+                                            <Span>
+                                                            
+                                                <Data>$Line</Data>
+                                                            
+                                                <Text/>
+                                                           
+                                            </Span>
+                                                      
+                                        </Par>
+                                                 
+                                    </ContainerPart>
+                                            
+                                </ContainerPart>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="ContactDetails">$MESSAGE.ContactDetails</Param>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>Logo</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="DocumentParts\Logo.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_Logo">
+                                   
+                            <Container>
+                                        
+                                <Image>
+                                             
+                                    <DataUri><![CDATA[$Header.GraphicFilename]]></DataUri>
+                                             
+                                    <Style>
+                                                  
+                                        <Stretch>keep_aspect_ratio</Stretch>
+                                                  
+                                        <VerticalAlignment>center</VerticalAlignment>
+                                                  
+                                        <HorizontalAlignment>last</HorizontalAlignment>
+                                                 
+                                    </Style>
+                                            
+                                </Image>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="Header">$MESSAGE.Header</Param>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>Subject</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="DocumentParts\HeaderSubject.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_HeaderSubject">
+                                   
+                            <Container>
+                                        
+                                <ContainerPart>
+                                             
+                                    <ForEach><![CDATA[$Subject.Line]]></ForEach>
+                                             
+                                    <DataDefinition/>
+                                             
+                                    <ContainerPart>
+                                                  
+                                        <VisibleIf><![CDATA[$Line.notEmpty()]]></VisibleIf>
+                                                  
+                                        <DataDefinition/>
+                                                  
+                                        <Par>
+                                                       
+                                            <Span>
+                                                            
+                                                <Data>$Line</Data>
+                                                            
+                                                <Text/>
+                                                           
+                                            </Span>
+                                                      
+                                        </Par>
+                                                 
+                                    </ContainerPart>
+                                            
+                                </ContainerPart>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="Subject">$MESSAGE.Subject</Param>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>Markings</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="\\Framework\DocumentParts\Markings.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_Markings">
+                                   
+                            <Container>
+                                        
+                                <Image uri="mtx://Framework/Ressources/markingsDIN5008B.png"/>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>Header</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="Models\Header.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_Header">
+                                   
+                            <Container>
+                                        
+                                <Image uri="mtx:Ressources/kwsoft Welle Oben.svg">
+                                             
+                                    <Style>
+                                                  
+                                        <FillContainerWidth>true</FillContainerWidth>
+                                                  
+                                        <Stretch>scale_to_fill</Stretch>
+                                                 
+                                    </Style>
+                                            
+                                </Image>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>SenderAddressLine</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="\\Framework\DocumentParts\SenderAdressLine.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_SenderAddressLine">
+                                   
+                            <Container>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>8.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>8.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Data>$Line</Data>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="Line">$MESSAGE.Sender.Address.SingleLine</Param>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>ContactDetails</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="\\Framework\DocumentParts\ContactDetails.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_ContactDetails">
+                                   
+                            <Container>
+                                        
+                                <ContainerPart>
+                                             
+                                    <ForEach><![CDATA[$ContactDetails.Line]]></ForEach>
+                                             
+                                    <DataDefinition/>
+                                             
+                                    <Par>
+                                                  
+                                        <Style>
+                                                       
+                                            <Align>right</Align>
+                                                      
+                                        </Style>
+                                                  
+                                        <Span>
+                                                       
+                                            <Data>$Line</Data>
+                                                       
+                                            <Text/>
+                                                      
+                                        </Span>
+                                                 
+                                    </Par>
+                                            
+                                </ContainerPart>
+                                        
+                                <ContainerPart id="DatumText">
+                                             
+                                    <DataDefinition/>
+                                             
+                                    <ModificationRights>
+                                                  
+                                        <Allowed>
+                                                       
+                                            <ModificationRight operations="EDIT,INPUT" role="MOMS.MOMSWebGUIAdmin"/>
+                                                       
+                                            <ModificationRight operations="EDIT,INPUT" role="MText.MTextUser"/>
+                                                       
+                                            <ModificationRight operations="EDIT,INPUT" role="MText.MTextAdmin"/>
+                                                      
+                                        </Allowed>
+                                                  
+                                        <Denied/>
+                                                 
+                                    </ModificationRights>
+                                             
+                                    <Par>
+                                                  
+                                        <Style>
+                                                       
+                                            <Align>right</Align>
+                                                      
+                                        </Style>
+                                                  
+                                        <Span>
+                                                       
+                                            <Style>
+                                                            
+                                                <FontSize>11.0pt</FontSize>
+                                                           
+                                            </Style>
+                                                       
+                                            <Data>$Date</Data>
+                                                       
+                                            <Text/>
+                                                      
+                                        </Span>
+                                                 
+                                    </Par>
+                                            
+                                </ContainerPart>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="Date">$MESSAGE.Date</Param>
+                         
+                    <Param name="ContactDetails">$MESSAGE.ContactDetails</Param>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>RecipientAddress</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="\\Framework\DocumentParts\RecipientAddress.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_RecipientAddress">
+                                   
+                            <Container id="AnschriftText">
+                                        
+                                <ContainerPart>
+                                             
+                                    <ForEach><![CDATA[$Address.Lines.Line]]></ForEach>
+                                             
+                                    <DataDefinition/>
+                                             
+                                    <Par>
+                                                  
+                                        <Span>
+                                                       
+                                            <Style>
+                                                            
+                                                <FontSize>12.0pt</FontSize>
+                                                           
+                                            </Style>
+                                                       
+                                            <Data>$Line</Data>
+                                                       
+                                            <Text/>
+                                                      
+                                        </Span>
+                                                 
+                                    </Par>
+                                            
+                                </ContainerPart>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="Address">$MESSAGE.Recipient.Address</Param>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+               
+            <Container>
+                    
+                <ContainerPartRef id="BodyText" uri="\\Framework\DocumentParts\TextBody.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_TextBody">
+                                   
+                            <ContainerPart>
+                                        
+                                <DataDefinition/>
+                                        
+                                <ModificationRights>
+                                             
+                                    <Allowed>
+                                                  
+                                        <ModificationRight operations="EDIT,INPUT" role="MOMS.MOMSWebGUIAdmin"/>
+                                                  
+                                        <ModificationRight operations="EDIT,INPUT" role="MText.MTextUser"/>
+                                                  
+                                        <ModificationRight operations="EDIT,INPUT" role="MText.MTextAdmin"/>
+                                                 
+                                    </Allowed>
+                                             
+                                    <Denied/>
+                                            
+                                </ModificationRights>
+                                        
+                                <ContainerPart>
+                                             
+                                    <ForEach><![CDATA[$MESSAGE.Subject.Line]]></ForEach>
+                                             
+                                    <DataDefinition/>
+                                             
+                                    <Par>
+                                                  
+                                        <Span>
+                                                       
+                                            <Style>
+                                                            
+                                                <FontSize>11.0pt</FontSize>
+                                                           
+                                            </Style>
+                                                       
+                                            <Data>$Line</Data>
+                                                       
+                                            <Text/>
+                                                      
+                                        </Span>
+                                                 
+                                    </Par>
+                                            
+                                </ContainerPart>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>11.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>11.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Data>$MESSAGE.SalutatoryAddress</Data>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>11.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                        
+                                <ContainerPartRef uri="\\Framework\Models\LoremIpsum.model"/>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>11.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>11.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Data>$MESSAGE.ComplimentaryClose</Data>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                        
+                                <Image>
+                                             
+                                    <DataUri><![CDATA[$MESSAGE.Sender.FaksimileFilename]]></DataUri>
+                                             
+                                    <Hyperlink type="string"><![CDATA[""]]></Hyperlink>
+                                             
+                                    <Style>
+                                                  
+                                        <Width>5.0cm</Width>
+                                                  
+                                        <Stretch>keep_aspect_ratio</Stretch>
+                                                 
+                                    </Style>
+                                            
+                                </Image>
+                                        
+                                <Par>
+                                             
+                                    <Span>
+                                                  
+                                        <Style>
+                                                       
+                                            <FontSize>11.0pt</FontSize>
+                                                      
+                                        </Style>
+                                                  
+                                        <Data>$MESSAGE.Sender.FaksimileLabel</Data>
+                                                  
+                                        <Text/>
+                                                 
+                                    </Span>
+                                            
+                                </Par>
+                                       
+                            </ContainerPart>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                         
+                    <Param name="MESSAGE">$MESSAGE</Param>
+                        
+                </ContainerPartRef>
+                   
+            </Container>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>FirstFooter</RegionRef>
+                        
+                </Style>
+                    
+                <Container>
+                         
+                    <Table>
+                              
+                        <Columns>
+                                   
+                            <Column>
+                                        
+                                <Style>
+                                             
+                                    <ColumnWidth>180505.0mpt</ColumnWidth>
+                                            
+                                </Style>
+                                       
+                            </Column>
+                                   
+                            <Column>
+                                        
+                                <Style>
+                                             
+                                    <ColumnWidth>110380.0mpt</ColumnWidth>
+                                            
+                                </Style>
+                                       
+                            </Column>
+                                   
+                            <Column>
+                                        
+                                <Style>
+                                             
+                                    <ColumnWidth>auto</ColumnWidth>
+                                            
+                                </Style>
+                                       
+                            </Column>
+                                  
+                        </Columns>
+                              
+                        <Style parentName="Simple"/>
+                              
+                        <Row>
+                                   
+                            <Cell>
+                                        
+                                <Container>
+                                             
+                                    <Style>
+                                                  
+                                        <VerticalPosition>last</VerticalPosition>
+                                                 
+                                    </Style>
+                                             
+                                    <Par>
+                                                  
+                                        <Style>
+                                                       
+                                            <Align>right</Align>
+                                                       
+                                            <LineSpacing type="proportional" value="100%"/>
+                                                      
+                                        </Style>
+                                                  
+                                        <Span>
+                                                       
+                                            <Style>
+                                                            
+                                                <FontSize>9.0pt</FontSize>
+                                                           
+                                            </Style>
+                                                       
+                                            <Text>kwsoft cloud services GmbH
+info@ccm.cloud
+Linnéstraße 1-3
+79110 Freiburg</Text>
+                                                      
+                                        </Span>
+                                                 
+                                    </Par>
+                                            
+                                </Container>
+                                       
+                            </Cell>
+                                   
+                            <Cell>
+                                        
+                                <Container>
+                                             
+                                    <Image uri="mtx:Ressources/logo.png">
+                                                  
+                                        <Style>
+                                                       
+                                            <FillContainerWidth>true</FillContainerWidth>
+                                                       
+                                            <FillContainerHeight>true</FillContainerHeight>
+                                                       
+                                            <HorizontalAlignment>center</HorizontalAlignment>
+                                                      
+                                        </Style>
+                                                 
+                                    </Image>
+                                            
+                                </Container>
+                                       
+                            </Cell>
+                                   
+                            <Cell>
+                                        
+                                <Container>
+                                             
+                                    <Style>
+                                                  
+                                        <VerticalPosition>last</VerticalPosition>
+                                                 
+                                    </Style>
+                                             
+                                    <Par>
+                                                  
+                                        <Style>
+                                                       
+                                            <LineSpacing type="proportional" value="100%"/>
+                                                      
+                                        </Style>
+                                                  
+                                        <Span>
+                                                       
+                                            <Style>
+                                                            
+                                                <FontSize>9.0pt</FontSize>
+                                                           
+                                            </Style>
+                                                       
+                                            <Text>Umsatzsteuer-Identifikationsnummer 
+gem. §27a UstG: DE142109668
+IBAN: DE75512108001245126199 
+BIC: MARKDEF1100</Text>
+                                                      
+                                        </Span>
+                                                 
+                                    </Par>
+                                            
+                                </Container>
+                                       
+                            </Cell>
+                                  
+                        </Row>
+                             
+                    </Table>
+                        
+                </Container>
+                   
+            </StaticContainer>
+               
+            <StaticContainer>
+                    
+                <Style>
+                         
+                    <RegionRef>Footer</RegionRef>
+                        
+                </Style>
+                    
+                <ContainerPartRef uri="\\Framework\DocumentParts\Footer.model">
+                         
+                    <Extensions>
+                              
+                        <ContainerExtension id="ContentExtension_Footer">
+                                   
+                            <Container>
+                                        
+                                <Image uri="mtx:Ressources/kwsoft Welle unten.svg">
+                                             
+                                    <Style>
+                                                  
+                                        <FillContainerWidth>true</FillContainerWidth>
+                                                  
+                                        <Stretch>scale_to_fill</Stretch>
+                                                 
+                                    </Style>
+                                            
+                                </Image>
+                                       
+                            </Container>
+                                  
+                        </ContainerExtension>
+                             
+                    </Extensions>
+                        
+                </ContainerPartRef>
+                   
+            </StaticContainer>
+              
+        </Section>
+         
+    </Document>
+    
+</RootPart>
